@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_text"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/re_couponactive_type"
+        android:layout_width="@dimen/base_dimen_320"
+        android:layout_height="@dimen/base_dimen_70"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@drawable/gouyouhuishop1">
+
+        <TextView
+            android:id="@+id/tv_couponactive_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_24"
+            android:text="领优惠券"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:id="@+id/tv_couponactive_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_24"
+            android:text="优惠活动"
+            android:textColor="#000000"
+            android:textSize="@dimen/base_dimen_28" />
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/store_couponaty_view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

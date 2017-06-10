@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_shopdetail_allcomment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_allpingnumtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部"
+                android:textColor="#F39800"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_allpingnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（0）"
+                android:textColor="#F39800"
+                android:textSize="@dimen/base_dimen_28" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_shopdetail_good"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_goodpingnumtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="好评"
+                android:textColor="#454545"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_goodpingnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（0）"
+                android:textColor="#454545"
+                android:textSize="@dimen/base_dimen_28" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_shopdetail_middle_good"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_zhongpingnumtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中评"
+                android:textColor="#454545"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_zhongpingnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（0）"
+                android:textColor="#454545"
+                android:textSize="@dimen/base_dimen_28" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_shopdetail_poor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_chapingnumtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="差评"
+                android:textColor="#454545"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_chapingnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（0）"
+                android:textColor="#454545"
+                android:textSize="@dimen/base_dimen_28" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:background="#cccccc" />
+
+    <RelativeLayout
+        android:id="@+id/re_nolist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textColor="@color/black"
+            android:textSize="@dimen/isnodatasize" />
+    </RelativeLayout>
+
+    <com.digoshop.app.module.arrountshops.view.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.digoshop.app.module.arrountshops.view.PullableListView
+            android:id="@+id/lv_shopcommentlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="#cccccc"
+            android:dividerHeight="@dimen/base_dimen_1" />
+
+        <include layout="@layout/load_more" />
+
+    </com.digoshop.app.module.arrountshops.view.PullToRefreshLayout>
+
+</LinearLayout>

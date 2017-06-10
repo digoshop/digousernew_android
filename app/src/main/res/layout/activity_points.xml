@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/ef"
+        android:id="@+id/sv_point_fr"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ef"
+            android:paddingBottom="@dimen/base_dimen_60"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_280"
+                >
+
+                <TextView
+                    android:id="@+id/tv_Sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:background="@drawable/hdzx_qiandaoan"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/base_dimen_10"
+                    android:paddingLeft="@dimen/base_dimen_10"
+                    android:paddingRight="@dimen/base_dimen_20"
+                    android:paddingTop="@dimen/base_dimen_10"
+                    android:text="签到 "
+                    android:textColor="#da4cff"
+                    android:textSize="@dimen/base_dimen_31" />
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="@dimen/base_dimen_28"
+                    android:layout_height="@dimen/base_dimen_28"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:layout_marginTop="@dimen/base_dimen_26"
+                    android:background="@drawable/hdzx_jf_jiantou"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/image1"
+                    android:layout_marginRight="@dimen/base_dimen_41"
+                    android:layout_marginTop="@dimen/base_dimen_31"
+                    android:gravity="center"
+                    android:text="我的积分：635"
+                    android:textColor="#fff100"
+                    android:textSize="@dimen/base_dimen_31" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_160"
+                    android:layout_below="@id/tv_Sign"
+                    android:layout_marginTop="@dimen/base_dimen_60"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/view_One"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/base_dimen_10"
+                        android:layout_marginTop="@dimen/base_dimen_20"
+                        android:layout_weight="0.5"
+                        android:background="@color/lan_line" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rb_signOne"
+                            android:layout_width="@dimen/base_dimen_63"
+                            android:layout_height="@dimen/base_dimen_73"
+                            android:background="@drawable/hdzx_qiandaoanzi"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="+5"
+                            android:textColor="@color/lan_line"
+                            android:textSize="@dimen/base_dimen_26" />
+
+                        <TextView
+                            android:id="@+id/tv_oneday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/base_dimen_8"
+                            android:text="1天"
+                            android:textColor="@color/lan_line"
+                            android:textSize="@dimen/base_dimen_30" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_anotherday"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/base_dimen_10"
+                        android:layout_marginTop="@dimen/base_dimen_20"
+                        android:layout_weight="0.6"
+                        android:background="@color/lan_line" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rb_anotherday"
+                            android:layout_width="@dimen/base_dimen_63"
+                            android:layout_height="@dimen/base_dimen_73"
+                            android:background="@drawable/hdzx_qiandaoanzi"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="+10"
+                            android:textColor="@color/lan_line"
+                            android:textSize="@dimen/base_dimen_26" />
+
+                        <TextView
+                            android:id="@+id/tv_anotherday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/base_dimen_8"
+                            android:text="2天"
+                            android:textColor="@color/lan_line"
+                            android:textSize="@dimen/base_dimen_30" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_Threedays"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/base_dimen_10"
+                        android:layout_marginTop="@dimen/base_dimen_20"
+                        android:layout_weight="0.6"
+                        android:background="@color/lan_line" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rb_Threedays"
+                            android:layout_width="@dimen/base_dimen_63"
+                            android:layout_height="@dimen/base_dimen_73"
+                            android:background="@drawable/hdzx_qiandaoanzi"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="+15"
+                            android:textColor="@color/lan_line"
+                            android:textSize="@dimen/base_dimen_26" />
+
+                        <TextView
+                            android:id="@+id/tv_Threedays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/base_dimen_8"
+                            android:text="3天"
+                            android:textColor="@color/lan_line"
+                            android:textSize="@dimen/base_dimen_30" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_Fourdays"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/base_dimen_10"
+                        android:layout_marginTop="@dimen/base_dimen_20"
+                        android:layout_weight="0.6"
+                        android:background="@color/lan_line" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rb_Fourdays"
+                            android:layout_width="@dimen/base_dimen_63"
+                            android:layout_height="@dimen/base_dimen_73"
+                            android:background="@drawable/hdzx_qiandaoanzi"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="+20"
+                            android:textColor="@color/lan_line"
+                            android:textSize="@dimen/base_dimen_26" />
+
+                        <TextView
+                            android:id="@+id/tv_Fourdays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/base_dimen_8"
+                            android:text="4天"
+                            android:textColor="@color/lan_line"
+                            android:textSize="@dimen/base_dimen_30" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_Fivedays"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/base_dimen_10"
+                        android:layout_marginTop="@dimen/base_dimen_20"
+                        android:layout_weight="0.6"
+                        android:background="@color/lan_line" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rb_Fivedays"
+                            android:layout_width="@dimen/base_dimen_63"
+                            android:layout_height="@dimen/base_dimen_73"
+                            android:background="@drawable/hdzx_qiandaoanzi"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="+25"
+                            android:textColor="@color/lan_line"
+                            android:textSize="@dimen/base_dimen_26" />
+
+                        <TextView
+                            android:id="@+id/tv_Fivedays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/base_dimen_8"
+                            android:text="5天"
+                            android:textColor="@color/lan_line"
+                            android:textSize="@dimen/base_dimen_30" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_Sixdays"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/base_dimen_10"
+                        android:layout_marginTop="@dimen/base_dimen_20"
+                        android:layout_weight="0.6"
+                        android:background="@color/lan_line" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rb_Sixdays"
+                            android:layout_width="@dimen/base_dimen_63"
+                            android:layout_height="@dimen/base_dimen_73"
+                            android:background="@drawable/hdzx_qiandaoanzi"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="+30"
+                            android:textColor="@color/lan_line"
+                            android:textSize="@dimen/base_dimen_26" />
+
+                        <TextView
+                            android:id="@+id/tv_Sixdays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/base_dimen_8"
+                            android:text="6天"
+                            android:textColor="@color/lan_line"
+                            android:textSize="@dimen/base_dimen_30" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_sevendays"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/base_dimen_10"
+                        android:layout_marginTop="@dimen/base_dimen_20"
+                        android:layout_weight="0.6"
+                        android:background="@color/lan_line" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rb_sevendays"
+                            android:layout_width="@dimen/base_dimen_63"
+                            android:layout_height="@dimen/base_dimen_73"
+                            android:background="@drawable/hdzx_qiandaoanzi"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="+35"
+                            android:textColor="@color/lan_line"
+                            android:textSize="@dimen/base_dimen_26" />
+
+                        <TextView
+                            android:id="@+id/tv_sevendays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/base_dimen_8"
+                            android:text="7天"
+                            android:textColor="@color/lan_line"
+                            android:textSize="@dimen/base_dimen_30" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/base_dimen_10"
+                        android:layout_marginTop="@dimen/base_dimen_20"
+                        android:layout_weight="0.5"
+                        android:background="@color/lan_line" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_26"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_20">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/Preferentialactivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/l_duihuan" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/base_dimen_12"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="积分兑换"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/base_dimen_30" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ponint_aty"
+                                android:textColor="#cccccc"
+                                android:textSize="@dimen/base_dimen_20" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/base_dimen_2"
+                    android:layout_height="match_parent"
+                    android:background="#F9F9F9" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/l_lingjuan" />
+
+                        <LinearLayout
+                            android:id="@+id/Rollcollarcore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/base_dimen_12"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="领优惠券"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/base_dimen_30" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ponint_cou"
+                                android:textColor="#cccccc"
+                                android:textSize="@dimen/base_dimen_20" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_ponit_aty"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_90"
+                android:background="#efefef"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_home_zsp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="缤纷活动，惠在其中"
+                    android:textColor="#454545"
+                    android:textSize="@dimen/base_dimen_26" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:layout_marginRight="@dimen/base_dimen_10"
+                    android:layout_toLeftOf="@id/tv_home_zsp"
+                    android:background="#DADADA" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_10"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:layout_toRightOf="@id/tv_home_zsp"
+                    android:background="#DADADA" />
+            </RelativeLayout>
+
+            <com.digoshop.app.module.storedetail.view.ListViewForScrollView
+                android:id="@+id/lv_couponactive"
+                android:background="#efefef"
+                android:dividerHeight="@dimen/base_dimen_20"
+                android:divider="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

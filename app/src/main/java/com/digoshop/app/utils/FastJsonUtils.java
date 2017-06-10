@@ -1,0 +1,235 @@
+package com.digoshop.app.utils;
+
+import android.widget.Toast;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.TypeReference;
+import com.alibaba.fastjson.serializer.SerializerFeature;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public class FastJsonUtils {
+
+	/**
+	 * 功能描述：把JSON数据转换成普通字符串列表
+	 * 
+	 * @param jsonData
+	 *            JSON数据
+	 * @param carEntityClass
+	 * @return
+	 * @throws Exception
+	 * @author myclover
+	 */
+	public static List<String> getStringList(String jsonData, Class<Toast> clazz) throws Exception {
+		return JSON.parseArray(jsonData, String.class);
+	}
+
+	/**
+	 * 功能描述：把JSON数据转换成指定的java对象
+	 * 
+	 * @param jsonData
+	 *            JSON数据
+	 * @param clazz
+	 *            指定的java对象
+	 * @return
+	 * @throws Exception
+	 * @author myclover
+	 */
+	public static <T> T getSingleBean(String jsonData, Class<T> clazz)
+			throws Exception {
+		return JSON.parseObject(jsonData, clazz);
+	}
+
+	/**
+	 * 功能描述：把JSON数据转换成指定的java对象列表
+	 * 
+	 * @param jsonData
+	 *            JSON数据
+	 * @param clazz
+	 *            指定的java对象
+	 * @return
+	 * @throws Exception
+	 * @author myclover
+	 */
+	public static <T> List<T> getBeanList(String jsonData, Class<T> clazz)
+			throws Exception {
+		return JSON.parseArray(jsonData, clazz);
+	}
+
+	/**
+	 * 功能描述：把JSON数据转换成较为复杂的java对象列表
+	 * 
+	 * @param jsonData
+	 *            JSON数据
+	 * @return
+	 * @throws Exception
+	 * @author myclover
+	 */
+	public static List<Map<String, Object>> getBeanMapList(String jsonData)
+			throws Exception {
+		return JSON.parseObject(jsonData,
+				new TypeReference<List<Map<String, Object>>>() {
+				});
+	}
+
+	/**
+	 * 将网络请求下来的数据用fastjson处理空的情况，并将时间戳转化为标准时间格式
+	 * @param result
+	 * @return
+	 */
+	public static String dealResponseResult(String result) {
+		result = JSONObject.toJSONString(result,
+				SerializerFeature.WriteClassName,
+				SerializerFeature.WriteMapNullValue,
+				SerializerFeature.WriteNullBooleanAsFalse,
+				SerializerFeature.WriteNullListAsEmpty,
+				SerializerFeature.WriteNullNumberAsZero,
+				SerializerFeature.WriteNullStringAsEmpty,
+				SerializerFeature.WriteDateUseDateFormat,
+				SerializerFeature.WriteEnumUsingToString,
+				SerializerFeature.WriteSlashAsSpecial,
+				SerializerFeature.WriteTabAsSpecial);
+		return result;
+	}
+	public static String formatJson(String json ) {
+		//每一层之前的占位符号比如空格 制表符
+		String fillStringUnit = "\t";
+		if (json == null || json.trim().length() == 0) {
+			return "";
+		}
+
+		int fixedLenth = 0;
+		ArrayList<String> tokenList = new ArrayList<String>();
+		{
+			String jsonTemp = json;
+			//预读取
+			while (jsonTemp.length() > 0) {
+				String token = getToken(jsonTemp);
+				jsonTemp = jsonTemp.substring(token.length());
+				token = token.trim();
+				tokenList.add(token);
+			}
+		}
+
+		for (int i = 0; i < tokenList.size(); i++) {
+			String token = tokenList.get(i);
+			int length = token.getBytes().length;
+			if (length > fixedLenth && i < tokenList.size() - 1 && tokenList.get(i + 1).equals(":")) {
+				fixedLenth = length;
+			}
+		}
+
+		StringBuilder buf = new StringBuilder();
+		int count = 0;
+		for (int i = 0; i < tokenList.size(); i++) {
+
+			String token = tokenList.get(i);
+
+			if (token.equals(",")) {
+				buf.append(token);
+				doFill(buf, count, fillStringUnit);
+				continue;
+			}
+			if (token.equals(":")) {
+				buf.append(" ").append(token).append(" ");
+				continue;
+			}
+			if (token.equals("{")) {
+				String nextToken = tokenList.get(i + 1);
+				if (nextToken.equals("}")) {
+					i++;
+					buf.append("{ }");
+				} else {
+					count++;
+					buf.append(token);
+					doFill(buf, count, fillStringUnit);
+				}
+				continue;
+			}
+			if (token.equals("}")) {
+				count--;
+				doFill(buf, count, fillStringUnit);
+				buf.append(token);
+				continue;
+			}
+			if (token.equals("[")) {
+				String nextToken = tokenList.get(i + 1);
+				if (nextToken.equals("]")) {
+					i++;
+					buf.append("[ ]");
+				} else {
+					count++;
+					buf.append(token);
+					doFill(buf, count, fillStringUnit);
+				}
+				continue;
+			}
+			if (token.equals("]")) {
+				count--;
+				doFill(buf, count, fillStringUnit);
+				buf.append(token);
+				continue;
+			}
+
+			buf.append(token);
+			//左对齐
+			if (i < tokenList.size() - 1 && tokenList.get(i + 1).equals(":")) {
+				int fillLength = fixedLenth - token.getBytes().length;
+				if (fillLength > 0) {
+					for(int j = 0; j < fillLength; j++) {
+						buf.append(" ");
+					}
+				}
+			}
+		}
+		return buf.toString();
+	}
+	private static String getToken(String json) {
+		StringBuilder buf = new StringBuilder();
+		boolean isInYinHao = false;
+		while (json.length() > 0) {
+			String token = json.substring(0, 1);
+			json = json.substring(1);
+
+			if (!isInYinHao &&
+					(token.equals(":") || token.equals("{") || token.equals("}")
+							|| token.equals("[") || token.equals("]")
+							|| token.equals(","))) {
+				if (buf.toString().trim().length() == 0) {
+					buf.append(token);
+				}
+
+				break;
+			}
+
+			if (token.equals("\\")) {
+				buf.append(token);
+				buf.append(json.substring(0, 1));
+				json = json.substring(1);
+				continue;
+			}
+			if (token.equals("\"")) {
+				buf.append(token);
+				if (isInYinHao) {
+					break;
+				} else {
+					isInYinHao = true;
+					continue;
+				}
+			}
+			buf.append(token);
+		}
+		return buf.toString();
+	}
+
+	private static void doFill(StringBuilder buf, int count, String fillStringUnit) {
+		buf.append("\n");
+		for (int i = 0; i < count; i++) {
+			buf.append(fillStringUnit);
+		}
+	}
+
+}

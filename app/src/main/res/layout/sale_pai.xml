@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+    <TextView  android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="竞拍时间段"
+        android:id="@+id/tv_timeitem"
+        android:textColor="#000000"/>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:divider="#000">
+
+    </ListView>
+
+
+</LinearLayout>

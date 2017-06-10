@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/iv_shop_coupona"
+        android:layout_width="@dimen/base_dimen_14"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/transparent" />
+    <LinearLayout
+        android:id="@+id/lin_daijin"
+        android:layout_width="@dimen/base_dimen_67"
+        android:layout_height="@dimen/base_dimen_40"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_shop_coupona"
+        android:background="@drawable/a_pro_daijin"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tv_pron_daijinname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingRight="@dimen/base_dimen_10"
+            android:paddingLeft="@dimen/base_dimen_10"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/base_dimen_26" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin_promanjian"
+        android:layout_width="@dimen/base_dimen_180"
+        android:layout_height="@dimen/base_dimen_40"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_shop_coupona"
+        android:background="@drawable/a_pro_manjian"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tv_pron_manjianname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/base_dimen_26" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_prozhe"
+        android:layout_width="@dimen/base_dimen_80"
+        android:layout_height="@dimen/base_dimen_40"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_shop_coupona"
+        android:background="@drawable/a_pro_zhe"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tv_pron_zhename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/base_dimen_26" />
+    </LinearLayout>
+</RelativeLayout>

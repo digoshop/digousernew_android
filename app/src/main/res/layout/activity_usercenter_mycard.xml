@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_140"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/base_dimen_100"
+            android:layout_height="@dimen/base_dimen_100"
+            android:layout_margin="@dimen/base_dimen_20"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_20"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会员商家"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="0"
+                    android:textColor="#F49900"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="家"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/base_dimen_30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginBottom="@dimen/base_dimen_6"
+                android:layout_marginTop="@dimen/base_dimen_6"
+                android:background="#D9D9D9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_gettime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:text="截止日期:"
+                    android:textColor="#C6C6C6"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="消费积分总计:"
+                    android:textColor="#C6C6C6"
+                    android:textSize="@dimen/base_dimen_30"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_eintg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_10"
+                    android:layout_marginRight="@dimen/base_dimen_10"
+                    android:text="0币"
+                    android:textColor="#F49900"
+                    android:textSize="@dimen/base_dimen_30"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_nolist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_160"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textColor="@color/black"
+            android:textSize="@dimen/base_dimen_32" />
+    </RelativeLayout>
+
+    <com.digoshop.app.module.arrountshops.view.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.digoshop.app.module.arrountshops.view.PullableListView
+            android:id="@+id/lv_mycard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@color/gray"
+            android:dividerHeight="@dimen/base_dimen_1" />
+
+        <include layout="@layout/load_more" />
+    </com.digoshop.app.module.arrountshops.view.PullToRefreshLayout>
+</LinearLayout>

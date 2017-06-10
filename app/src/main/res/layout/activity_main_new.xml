@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_1"
+            android:background="#f5f5f5" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/base_dimen_10"
+            android:paddingTop="@dimen/base_dimen_10">
+
+            <com.digoshop.app.module.main.MyRadioButton
+                android:id="@+id/tab_shouye"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@drawable/hom_tab_text"
+                android:textSize="@dimen/base_dimen_20"
+                app:drawableSize="@dimen/base_dimen_48"
+                app:drawableTop="@drawable/selecter_tab_1_btn" />
+
+            <com.digoshop.app.module.main.MyRadioButton
+                android:id="@+id/tab_zhoubian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:layout_weight="1"
+                android:button="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="游周边"
+                android:textColor="@drawable/hom_tab_text"
+                android:textSize="@dimen/base_dimen_20"
+                app:drawableSize="@dimen/base_dimen_48"
+                app:drawableTop="@drawable/selecter_tab_2_btn" />
+
+            <com.digoshop.app.module.main.MyRadioButton
+                android:id="@+id/tab_dingzhi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:layout_weight="1"
+                android:button="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="我的商品"
+                android:textColor="@drawable/hom_tab_text"
+                android:textSize="@dimen/base_dimen_20"
+                app:drawableSize="@dimen/base_dimen_48"
+                app:drawableTop="@drawable/selecter_tab_6_btn" />
+
+            <com.digoshop.app.module.main.MyRadioButton
+                android:id="@+id/tab_qiandao"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:layout_weight="1"
+                android:button="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="赚迪币"
+                android:textColor="@drawable/hom_tab_text"
+                android:textSize="@dimen/base_dimen_20"
+                app:drawableSize="@dimen/base_dimen_48"
+                app:drawableTop="@drawable/selecter_tab_3_btn" />
+
+            <com.digoshop.app.module.main.MyRadioButton
+                android:id="@+id/tab_geren"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:layout_weight="1"
+                android:button="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@drawable/hom_tab_text"
+                android:textSize="@dimen/base_dimen_20"
+                app:drawableSize="@dimen/base_dimen_48"
+                app:drawableTop="@drawable/selecter_tab_5_btn" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>

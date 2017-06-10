@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textcolor_gvhui"
+    android:id="@+id/re_coupintypebg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/base_dimen_15"
+        android:layout_marginRight="@dimen/base_dimen_15"
+        android:layout_marginTop="@dimen/base_dimen_15"
+        android:layout_marginBottom="@dimen/base_dimen_15"
+        >
+
+        <ImageView
+            android:id="@+id/iv_coupon_honggou"
+            android:layout_width="@dimen/base_dimen_22"
+            android:layout_height="@dimen/base_dimen_15"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="@dimen/base_dimen_6"
+            android:background="@drawable/honggou" />
+
+        <TextView
+            android:id="@+id/tv_coupontype_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_coupon_honggou"
+            android:text="类别名称"
+            android:textColor="#515055"
+            android:textSize="@dimen/base_dimen_24" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

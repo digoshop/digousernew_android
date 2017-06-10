@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/base_dimen_20">
+
+        <ImageView
+            android:layout_width="@dimen/base_dimen_35"
+            android:layout_height="@dimen/base_dimen_40"
+            android:layout_marginLeft="@dimen/base_dimen_10"
+            android:src="@drawable/myreply" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_10"
+            android:text="总计"
+            android:textSize="@dimen/base_dimen_30"
+            android:textColor="#454545" />
+
+        <TextView
+            android:id="@+id/tv_replynum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_10"
+            android:text="0"
+            android:textColor="#F19601"
+            android:textSize="@dimen/base_dimen_34" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_10"
+            android:textSize="@dimen/base_dimen_30"
+            android:text="条评价"
+            android:textColor="#454545" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_20"
+        android:background="#F7F7F7" />
+
+    <RelativeLayout
+        android:id="@+id/re_nolist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_160"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textColor="@color/black"
+            android:textSize="@dimen/base_dimen_32" />
+    </RelativeLayout>
+
+    <com.digoshop.app.module.arrountshops.view.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.digoshop.app.module.arrountshops.view.PullableListView
+            android:id="@+id/lv_myreply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/load_more" />
+
+    </com.digoshop.app.module.arrountshops.view.PullToRefreshLayout>
+
+    <!--<ListView-->
+    <!--android:id="@+id/lv_myreply"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" >-->
+    <!--</ListView>-->
+
+</LinearLayout>

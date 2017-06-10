@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <include
+        layout="@layout/arountshops_include_tab_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_95" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:background="#cccccc" />
+
+
+    <RelativeLayout
+        android:id="@+id/re_nolist"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_160"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textColor="@color/black"
+            android:textSize="@dimen/base_dimen_32" />
+    </RelativeLayout>
+
+
+    <com.digoshop.app.module.arrountshops.view.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.digoshop.app.module.arrountshops.view.PullableListView
+            android:id="@+id/arountshops_lv_shops"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="#f8f8f8"
+            android:dividerHeight="@dimen/base_dimen_20" />
+
+        <include layout="@layout/load_more" />
+
+    </com.digoshop.app.module.arrountshops.view.PullToRefreshLayout>
+    <!--<ListView-->
+    <!--android:id="@+id/arountshops_lv_shops"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:divider="#E3E3E3"-->
+    <!--android:dividerHeight="0.5dp" >-->
+    <!--</ListView>-->
+
+</LinearLayout>

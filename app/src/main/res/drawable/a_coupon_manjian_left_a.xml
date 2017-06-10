@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 角度 -->
+    <corners
+        android:bottomLeftRadius="@dimen/base_dimen_20"
+        android:bottomRightRadius="0dp"
+        android:topLeftRadius="@dimen/base_dimen_20"
+        android:topRightRadius="0dp" />
+    <!-- 填充色 -->
+    <solid android:color="#f83f0d" />
+    <!-- 描边 设置线宽及颜色 -->
+    <stroke
+        android:width="@dimen/base_dimen_1"
+        android:color="#00000000" />
+</shape>

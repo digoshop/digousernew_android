@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/base_dimen_16"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        style="@style/LetterIndexTextViewStyle"
+        android:text="@string/located_city"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_32"
+        android:background="@color/content_bg"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/layout_locate"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/base_dimen_80"
+            android:clickable="true"
+            android:gravity="center"
+            android:minWidth="@dimen/base_dimen_192"
+            android:paddingLeft="@dimen/base_dimen_16"
+            android:paddingRight="@dimen/base_dimen_16">
+
+            <ImageView
+                android:layout_width="@dimen/base_dimen_25"
+                android:layout_height="@dimen/base_dimen_30"
+                android:src="@drawable/ic_locate"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_located_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_16"
+                android:text="@string/locating"
+                android:textColor="@color/gray_deep"
+                android:textSize="@dimen/base_dimen_32" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

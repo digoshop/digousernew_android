@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#f8f8f8"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/base_dimen_10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/base_dimen_10"
+        android:layout_marginLeft="@dimen/base_dimen_40"
+        android:layout_marginRight="@dimen/base_dimen_40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/base_dimen_643"
+            android:layout_height="@dimen/base_dimen_82"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/dingzhi_pic"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/base_dimen_20"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/xqfb"
+            android:textColor="@color/custom_tab_yellow"
+            android:textSize="@dimen/base_dimen_24"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sjhf"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/base_dimen_24"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ckzx"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/base_dimen_24"/>
+
+        <TextView
+            android:id="@+id/tv_isgoutong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="沟通预定"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/base_dimen_24"/>
+
+        <TextView
+            android:id="@+id/tv_zuihou"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="到店购买"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/base_dimen_24"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="#EACA77"/>
+
+</LinearLayout>

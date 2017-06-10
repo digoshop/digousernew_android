@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_text"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/re_home_shop_ivbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_home_shop_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_225"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/kcx_001"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/base_dimen_121"
+            android:layout_height="@dimen/base_dimen_31"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/a_home_qianrenzhengbg">
+
+            <TextView
+                android:id="@+id/tv_home_shop_type_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/base_dimen_4"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/base_dimen_20"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_home_shopname_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/re_home_shop_ivbg"
+        android:layout_marginBottom="@dimen/base_dimen_5"
+        android:layout_marginLeft="@dimen/base_dimen_4"
+        android:layout_marginRight="@dimen/base_dimen_10"
+        android:layout_marginTop="@dimen/base_dimen_5"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#666666"
+        android:textSize="@dimen/base_dimen_22" />
+
+    <LinearLayout
+        android:id="@+id/re_home_shoptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_home_shopname_item"
+        android:layout_marginBottom="@dimen/base_dimen_4"
+        android:layout_marginLeft="@dimen/base_dimen_4"
+        android:layout_marginRight="@dimen/base_dimen_10"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tv_dui_comshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_18"
+            android:background="@drawable/a_shape_dui_huang"
+            android:paddingLeft="@dimen/base_dimen_4"
+            android:paddingRight="@dimen/base_dimen_4"
+            android:text="兑"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/base_dimen_16" />
+
+        <TextView
+            android:id="@+id/tv_hui_comshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_8"
+            android:background="@drawable/a_shape_hui_lan"
+            android:paddingLeft="@dimen/base_dimen_4"
+            android:paddingRight="@dimen/base_dimen_4"
+            android:text="惠"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/base_dimen_16" />
+
+        <TextView
+            android:id="@+id/tv_quan_comshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_8"
+            android:background="@drawable/a_shape_quan_lv"
+            android:paddingLeft="@dimen/base_dimen_4"
+            android:paddingRight="@dimen/base_dimen_4"
+            android:text="券"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/base_dimen_16" />
+    </LinearLayout>
+
+
+</RelativeLayout>

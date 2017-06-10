@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_text"
+    android:orientation="horizontal"
+
+    android:padding="@dimen/base_dimen_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/base_dimen_16"
+        android:layout_marginLeft="@dimen/base_dimen_10"
+        android:layout_marginTop="@dimen/base_dimen_16"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+            <ImageView
+                android:id="@+id/iv_flashsale"
+                android:layout_width="@dimen/base_dimen_180"
+                android:layout_height="@dimen/base_dimen_120"
+                android:background="@drawable/kcx_001"
+                android:scaleType="center" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/base_dimen_10"
+            android:layout_weight="4.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_fslale_pna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名字"
+                android:textColor="#454545"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="认购价："
+                        android:textColor="#9e9e9e"
+                        android:textSize="@dimen/base_dimen_24" />
+
+                    <TextView
+                        android:id="@+id/tv_fsale_aplg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="竞拍价格"
+                        android:textColor="@color/custom_tab_yellow"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:id="@+id/tv_fsale_ppr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="实际价格"
+                        android:textColor="#9e9e9e"
+                        android:textSize="@dimen/base_dimen_24" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_fsale_ptn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="店铺名字"
+                    android:textColor="#9e9e9e"
+                    android:textSize="@dimen/base_dimen_24" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_flashetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_huang"
+        android:padding="4dp"
+        android:text="马上拍"
+        android:textColor="@color/custom_tab_yellow"
+        android:textSize="@dimen/base_dimen_24" />
+
+    <TextView
+        android:id="@+id/tv_fsale_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="出价次数"
+        android:paddingBottom="4dp"
+        android:textColor="#9e9e9e"
+        android:textSize="@dimen/base_dimen_24" />
+</RelativeLayout>

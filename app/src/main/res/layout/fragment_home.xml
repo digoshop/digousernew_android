@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white_text"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+
+    <com.digoshop.app.module.arrountshops.view.PullToRefreshLayout
+        android:id="@+id/refresh_store_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head"/>
+
+        <com.digoshop.app.module.arrountshops.view.PullableScrollView
+            android:id="@+id/pullsv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                layout="@layout/home_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </com.digoshop.app.module.arrountshops.view.PullableScrollView>
+
+        <include layout="@layout/load_more" />
+    </com.digoshop.app.module.arrountshops.view.PullToRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+      >
+
+    <RelativeLayout
+        android:id="@+id/re_dc_moneydc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp" >
+
+        <TextView
+            android:id="@+id/tv_dc_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#1895d4"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_dc_money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_dc_money"
+            android:textColor="#eb9213"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_dc_usage_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dc_money"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black_text"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_dc_usage_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black_text"
+        android:textSize="8sp" />
+
+</RelativeLayout>

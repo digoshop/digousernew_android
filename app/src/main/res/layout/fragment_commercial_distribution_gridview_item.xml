@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/base_dimen_10"
+        android:background="@drawable/a_shape_bai"
+        android:padding="@dimen/base_dimen_6">
+
+        <TextView
+            android:id="@+id/gridview_textview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="F4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/base_dimen_24" />
+
+        <RelativeLayout
+            android:id="@+id/re_shoopn_relation"
+            android:layout_width="@dimen/base_dimen_35"
+            android:layout_height="@dimen/base_dimen_35"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/base_dimen_3"
+            android:paddingRight="@dimen/base_dimen_3"
+            android:layout_marginRight="@dimen/base_dimen_6"
+            android:background="@drawable/a_shape_toumingqianhui">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/gridview_textview_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/base_dimen_20" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

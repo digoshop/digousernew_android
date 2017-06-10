@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f9f7"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/base_dimen_40"
+        android:layout_marginRight="@dimen/base_dimen_40"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@drawable/shape_bai_bottom">
+
+        <ImageView
+            android:layout_width="@dimen/base_dimen_649"
+            android:layout_height="@dimen/base_dimen_34"
+            android:layout_marginTop="-3dp"
+            android:src="@drawable/card_border" />
+
+        <LinearLayout
+            android:id="@+id/lin_mycard_lv_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_30"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_30"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/base_dimen_420"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/base_dimen_32" />
+
+                    <ImageView
+                        android:id="@+id/iv_mycard_arrow"
+                        android:layout_width="@dimen/base_dimen_15"
+                        android:layout_height="@dimen/base_dimen_22"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/base_dimen_6"
+                        android:background="@drawable/kb_p_jiantou" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_vip_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_dimen_8"
+                    android:text="卡号：89898989890001"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <ImageView
+                    android:layout_width="@dimen/base_dimen_364"
+                    android:layout_height="@dimen/base_dimen_22"
+                    android:layout_marginLeft="@dimen/base_dimen_30"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/kb_d_taioxingma" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_sava"
+                android:layout_width="@dimen/base_dimen_100"
+                android:layout_height="@dimen/base_dimen_100"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/base_dimen_50"
+                android:src="@drawable/defaultyuan" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/lin_mycard_lv_item"
+            android:background="#ffffff"
+            android:paddingBottom="@dimen/base_dimen_4"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:paddingRight="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_4">
+
+            <TextView
+                android:id="@+id/tv_intga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="会员积分卡"
+                android:textColor="#615c5b"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <View
+                android:id="@+id/tv_intgb"
+                android:layout_width="@dimen/base_dimen_1"
+                android:layout_height="@dimen/base_dimen_40"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:layout_marginRight="@dimen/base_dimen_30"
+                android:layout_toRightOf="@+id/tv_intga"
+                android:background="#c9dedc" />
+
+            <TextView
+                android:id="@+id/tv_intgc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_intgb"
+                android:text="总积分"
+                android:textColor="#a9a8a8"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:id="@+id/tv_intg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_4"
+                android:layout_marginRight="@dimen/base_dimen_4"
+                android:layout_toRightOf="@+id/tv_intgc"
+                android:text="0"
+                android:textColor="#f39902"
+                android:textSize="@dimen/base_dimen_36" />
+
+            <TextView
+                android:id="@+id/tv_intgd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_intg"
+                android:text="币"
+                android:textColor="#a9a8a8"
+                android:textSize="@dimen/base_dimen_30"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_vip_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="钻石卡"
+                android:textColor="#a9a8a8"
+                android:textSize="@dimen/base_dimen_30" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_isuser"
+            android:layout_width="@dimen/base_dimen_161"
+            android:layout_height="@dimen/base_dimen_133"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/kb_dj" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f9f7"
+        android:paddingBottom="@dimen/base_dimen_10"
+        android:paddingLeft="@dimen/base_dimen_38"
+        android:paddingRight="@dimen/base_dimen_38"
+        android:paddingTop="@dimen/base_dimen_10">
+
+        <TextView
+            android:id="@+id/tv_create_tim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="办卡时间: "
+            android:textColor="#9A9A9A"
+            android:textSize="@dimen/base_dimen_26" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:text="办卡地点: "
+            android:textColor="#9A9A9A"
+            android:textSize="@dimen/base_dimen_26" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.digoshop"
+    android:versionCode="89"
+    android:versionName="1.117">
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 获取短信验证码 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- renren sso Permission for Unit Test -->
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- renren sso Permission for Unit Test -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于读取手机当前的状态 -->
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于读取手机当前的状态 -->
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat">
+
+        <!-- 高德的appkey -->
+        <!-- <meta-data -->
+        <!-- android:name="com.amap.api.v2.apikey" -->
+        <!-- android:value="c360d77514e061404a9ce0d3bc682b3d" /> -->
+        <!-- new -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c360d77514e061404a9ce0d3bc682b3d" />
+
+        <!-- 友盟的appkey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5669366f67e58e66020007fe" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="digo" />
+
+        <activity
+            android:name=".app.module.welcome.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashThemedigo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.module.shopdetailnew.ShopDetailNewSNActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="digo"
+                    android:host="digo.app"
+                    android:pathPrefix="/openwith"
+                    />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".app.module.main.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".app.module.shopdetail.bigimg.aty.ImagePagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.shopdetail.ShopCommentListAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.setting.ComplaintFeedback"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".app.module.arrountshops.TestAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.PointsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MyCustiomGSListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MerchantreplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.search.ScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.ShopInviteDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.ShopInviteListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.customServices.CategoryChooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.looksales.poitsale.SaleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.looksales.poitsale.SaletabDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".app.module.product.ProductDetailAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.product.ProductExchangeAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.looksales.poitsale.SaleHisttoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.looksales.xianshi.FlashSalesList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.looksales.xianshi.PaiDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.looksales.xianshi.ShoptabdetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.looksales.xianshi.ShoptaListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.home.couponactive.CouponActyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.home.cityselect.CityPickerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".app.module.search.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.home.couponactive.ActivityDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.home.couponactive.CouponDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MyLikeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MyMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MyMessageDetailAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MyCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MyReplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MyGiftWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MyCouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MyMembershipCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MyCostHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MyqecodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MyJifenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MyjifenContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.userCenter.module.MyCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.seekshop.SearchStoreAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.seekshop.SeekShopListAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.setting.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.setting.SelectShequListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.setting.ModifUserInfoAty"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".app.module.setting.AccountSafetyAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.setting.MessageSetAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.seekservice.SeekServiceActivitynew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.seekservice.SeekServiceListAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.seekservice.CategoryChooseServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.storedetail.StoreDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.setting.AboutDigoAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.setting.AppIntroduceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.module.setting.DialogQrCode"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_YouleDialog" />
+        <activity
+            android:name=".app.module.login.Loginaty"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".app.module.login.Regeteraty"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".app.module.login.ForgetPasswordAty"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".app.module.login.ModifPasswodrAty"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".app.module.login.DialogPhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_YouleDialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 微信回调activity start -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <!-- 高得定位 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- 高得定位  end -->
+        <activity android:name=".app.module.login.QuickLoginActivity" />
+        <activity
+            android:name=".app.module.setting.ChangePhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".app.module.setting.MyPhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+         App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service android:name=".app.module.setting.update.UpdateService" />
+
+        <activity
+            android:name=".app.module.home.CustomContentAty"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".app.module.home.LookStoreAty"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <activity
+            android:name=".app.module.home.CouponHomeHuaAty"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".app.module.home.AtyHomeAty"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".app.module.home.AllHomeAty"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".app.module.home.TestAty"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".app.module.customServices.CustomServiceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".app.module.userCenter.module.MyCommentDetailAty"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".app.module.arrountshops.ArountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <activity
+            android:name=".app.module.shopdetailnew.ShopDetailAllCateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".app.module.shopdetailnew.ShopDetailAllAtyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".app.module.shopdetailnew.ShopDetailProductListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+    </application>
+
+</manifest>

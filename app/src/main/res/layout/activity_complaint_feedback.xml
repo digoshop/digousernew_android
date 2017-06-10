@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f0f0f0"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_40"
+        android:background="#f0f0f0"
+        android:orientation="vertical"
+        android:padding="@dimen/base_dimen_20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/base_dimen_30"
+                android:text="您的建议是关于"
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+
+                android:background="@color/hui"
+                android:entries="@array/languages"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="意见反馈"
+                android:textSize="@dimen/base_dimen_30"
+                android:textColor="@color/black"/>
+
+            <com.digoshop.app.module.setting.view.ContainsEmojiEditText
+                android:id="@+id/et_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="@color/white"
+                android:enabled="true"
+                android:gravity="top"
+                android:hint="我们非常重视您的意见"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:maxLength="80"
+                android:minLines="5"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:scrollbars="vertical"
+                android:textColor="#000000"
+                android:textColorHint="@color/hui"
+                android:textSize="@dimen/base_dimen_24"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="你的联系方式(选填)"
+                android:textSize="@dimen/base_dimen_30"
+                android:textColor="@color/black"/>
+
+            <com.digoshop.app.module.setting.view.ContainsEmojiEditText
+                android:id="@+id/et_contactway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="@color/white"
+                android:hint="手机或QQ以便我们给您回复"
+                android:padding="@dimen/base_dimen_20"
+                android:textColor="#000000"
+                android:maxLength="20"
+                android:textColorHint="@color/hui"
+                android:textSize="@dimen/base_dimen_24"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="如有不能解决的问题，请"
+                android:textSize="@dimen/base_dimen_30"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系客服！"
+                android:textSize="@dimen/base_dimen_30"
+                android:textColor="@color/green_text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_submit_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/base_dimen_20"
+        android:background="@color/custom_tab_blue"
+        android:gravity="center"
+        android:paddingBottom="@dimen/base_dimen_10"
+        android:paddingTop="@dimen/base_dimen_10"
+        android:text="@string/submit"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/base_dimen_36"/>
+
+</LinearLayout>

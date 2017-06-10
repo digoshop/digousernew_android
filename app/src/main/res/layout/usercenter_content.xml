@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_180"
+        android:background="@drawable/grzx_bj_az">
+
+        <LinearLayout
+            android:id="@+id/ll_photo"
+            android:layout_width="@dimen/base_dimen_150"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/base_dimen_16">
+
+            <com.digoshop.app.utils.RoundImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="@dimen/base_dimen_120"
+                android:layout_height="@dimen/base_dimen_120"
+                android:layout_margin="@dimen/base_dimen_20"
+                android:background="@drawable/grzx_touxiang" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_toLeftOf="@+id/ll_qrcode"
+            android:layout_toRightOf="@+id/ll_photo"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text=""
+                android:gravity="center"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/base_dimen_30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_qrcode"
+            android:layout_width="@dimen/base_dimen_128"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_width="@dimen/base_dimen_56"
+                android:layout_height="@dimen/base_dimen_56"
+                android:src="@drawable/grzx_erweima" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_centerVertical="true"
+        android:background="#D6D6D6" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_40"
+        android:layout_centerVertical="true"
+        android:background="#F8F8F8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_centerVertical="true"
+        android:background="#D6D6D6" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mymessage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:paddingLeft="@dimen/base_dimen_20"
+        android:paddingRight="@dimen/base_dimen_20">
+
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="@dimen/base_dimen_56"
+            android:layout_height="@dimen/base_dimen_56"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_xiaoxi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_message"
+            android:padding="@dimen/base_dimen_20"
+            android:text="我的消息"
+            android:textColor="#000"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <ImageView
+            android:layout_width="@dimen/base_dimen_10"
+            android:layout_height="@dimen/base_dimen_21"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_marginLeft="@dimen/base_dimen_90"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:background="#D6D6D6" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mycost"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:paddingLeft="@dimen/base_dimen_20"
+        android:paddingRight="@dimen/base_dimen_20">
+
+        <ImageView
+            android:id="@+id/iv_cost"
+            android:layout_width="@dimen/base_dimen_56"
+            android:layout_height="@dimen/base_dimen_56"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_xiaofei" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_cost"
+            android:padding="@dimen/base_dimen_20"
+            android:text="消费记录"
+            android:textColor="#000"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <ImageView
+            android:layout_width="@dimen/base_dimen_10"
+            android:layout_height="@dimen/base_dimen_21"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_marginLeft="@dimen/base_dimen_90"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:background="#D6D6D6" />
+
+    <RelativeLayout
+        android:id="@+id/rl_myjifen"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:paddingLeft="@dimen/base_dimen_20"
+        android:paddingRight="@dimen/base_dimen_20">
+
+        <ImageView
+            android:id="@+id/iv_my_jifen"
+            android:layout_width="@dimen/base_dimen_56"
+            android:layout_height="@dimen/base_dimen_56"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_jifen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_my_jifen"
+            android:padding="@dimen/base_dimen_20"
+            android:text="我的积分"
+            android:textColor="#000"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <ImageView
+            android:layout_width="@dimen/base_dimen_10"
+            android:layout_height="@dimen/base_dimen_21"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_line_height"
+        android:layout_marginLeft="@dimen/base_dimen_90"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:background="#D6D6D6"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:paddingLeft="@dimen/base_dimen_20"
+        android:paddingRight="@dimen/base_dimen_20"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_msg"
+            android:layout_width="@dimen/base_dimen_56"
+            android:layout_height="@dimen/base_dimen_56"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_pinglun" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_msg"
+            android:padding="@dimen/base_dimen_20"
+            android:text="我的评论"
+            android:textColor="#000"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_centerVertical="true"
+        android:background="#D6D6D6" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_40"
+        android:layout_centerVertical="true"
+        android:background="#F8F8F8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_centerVertical="true"
+        android:background="#D6D6D6" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mycustom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:paddingLeft="@dimen/base_dimen_20"
+        android:paddingRight="@dimen/base_dimen_20">
+
+        <ImageView
+            android:id="@+id/iv_msg1"
+            android:layout_width="@dimen/base_dimen_56"
+            android:layout_height="@dimen/base_dimen_56"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_dingzhi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_msg1"
+            android:padding="@dimen/base_dimen_20"
+            android:text="我的定制"
+            android:textColor="#000"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_line_height"
+        android:layout_marginLeft="@dimen/base_dimen_90"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:background="#D6D6D6"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mygift"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:paddingLeft="@dimen/base_dimen_20"
+        android:paddingRight="@dimen/base_dimen_20"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_msg3"
+            android:layout_width="@dimen/base_dimen_56"
+            android:layout_height="@dimen/base_dimen_56"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_lipin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_msg3"
+            android:padding="@dimen/base_dimen_20"
+            android:text="我的商品"
+            android:textColor="#000"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_jiantou" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_line_height"
+        android:layout_marginLeft="@dimen/base_dimen_90"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:background="#D6D6D6" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mycard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:paddingLeft="@dimen/base_dimen_20"
+        android:paddingRight="@dimen/base_dimen_20">
+
+        <ImageView
+            android:id="@+id/iv_msg2"
+            android:layout_width="@dimen/base_dimen_56"
+            android:layout_height="@dimen/base_dimen_56"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_kabao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_msg2"
+            android:padding="@dimen/base_dimen_20"
+            android:text="我的卡包"
+            android:textColor="#000"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_jiantou" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_line_height"
+        android:layout_marginLeft="@dimen/base_dimen_90"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:background="#D6D6D6" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mycoupon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:paddingLeft="@dimen/base_dimen_20"
+        android:paddingRight="@dimen/base_dimen_20">
+
+        <ImageView
+            android:id="@+id/iv_msg4"
+            android:layout_width="@dimen/base_dimen_56"
+            android:layout_height="@dimen/base_dimen_56"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_quan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_msg4"
+            android:padding="@dimen/base_dimen_20"
+            android:text="我的优惠券"
+            android:textColor="#000"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_line_height"
+        android:layout_marginLeft="@dimen/base_dimen_90"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:background="#D6D6D6" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mylike"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:paddingLeft="@dimen/base_dimen_20"
+        android:paddingRight="@dimen/base_dimen_20">
+
+        <ImageView
+            android:id="@+id/iv_msg5"
+            android:layout_width="@dimen/base_dimen_56"
+            android:layout_height="@dimen/base_dimen_56"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_guanzhu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_msg5"
+            android:padding="@dimen/base_dimen_20"
+            android:text="我的关注"
+            android:textColor="#000"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <ImageView
+            android:layout_width="@dimen/base_dimen_10"
+            android:layout_height="@dimen/base_dimen_21"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grzx_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:background="#D6D6D6" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_60"
+        android:layout_centerVertical="true"
+        android:background="#F8F8F8" />
+
+</LinearLayout>

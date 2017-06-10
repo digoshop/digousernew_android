@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editerweima"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:hint="请输入要生成的内容." />
+
+    <Button
+        android:id="@+id/btnerwei"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/editerweima"
+        android:onClick="createqrcode"
+        android:text="我要生成二维码" />
+
+    <Button
+        android:id="@+id/btntiaowei"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnerwei"
+        android:onClick="createtiaocode"
+        android:text="我要生成条形码" />
+
+    <Button
+        android:id="@+id/btnsaomiao"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btntiaowei"
+        android:onClick="onclicksaomiao"
+        android:text="我要扫描二维码/条形码" />
+
+    <Button
+        android:id="@+id/btndrawpic"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnsaomiao"
+        android:onClick="onclickdrawpic"
+        android:text="我要制作优惠券" />
+
+    <Button
+        android:id="@+id/btnsina"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btndrawpic"
+        android:onClick="onclicksina"
+        android:text="新浪登录" />
+
+    <Button
+        android:id="@+id/btnqq"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnsina"
+        android:onClick="onclickqq"
+        android:text="登录qq" />
+
+    <Button
+        android:id="@+id/btnchanclqq"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnqq"
+        android:onClick="onclickchanclqq"
+        android:text="注销qq" />
+
+</RelativeLayout>

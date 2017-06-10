@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+
+    <LinearLayout
+        android:id="@+id/lin_myshop_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/text_homeaty_titlea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_2"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_color_bgthree"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_20"
+            android:text="未结算(0)"
+            android:textColor="@drawable/font_selectortwo"
+            android:textSize="@dimen/base_dimen_32" />
+
+        <RadioButton
+            android:id="@+id/text_homeaty_titleb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_2"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_color_bgthree"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_20"
+            android:text="已结算(0)"
+            android:textColor="@drawable/font_selectortwo"
+            android:textSize="@dimen/base_dimen_32" />
+
+        <RadioButton
+            android:id="@+id/text_homeaty_titlec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_2"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_color_bgthree"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_20"
+            android:text="已过期(0)"
+            android:textColor="@drawable/font_selectortwo"
+            android:textSize="@dimen/base_dimen_32" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_mypro_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_20"
+        android:layout_centerVertical="true"
+        android:background="#f5f5f5" />
+
+    <RelativeLayout
+        android:id="@+id/re_nomycouponlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_20"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_shopnomsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_30"
+            android:gravity="center"
+            android:text="暂无商品"
+            android:textColor="@color/black"
+            android:textSize="@dimen/base_dimen_32" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_mypro_islogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_200"
+        android:background="#f5f5f5"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_shoplistlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/a_shape_lanlogin"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_10"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:paddingRight="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_10"
+            android:text="点击登录"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/base_dimen_30" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_myprodecut_tuijian"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_80">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/base_dimen_32"
+                android:layout_height="@dimen/base_dimen_20"
+                android:background="@drawable/a_myproduct_tuijian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_15"
+                android:layout_marginRight="@dimen/base_dimen_15"
+                android:text="为你推荐"
+                android:textColor="#333333"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <ImageView
+                android:layout_width="@dimen/base_dimen_32"
+                android:layout_height="@dimen/base_dimen_20"
+                android:background="@drawable/a_myproduct_tuijian" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.digoshop.app.module.arrountshops.view.PullToRefreshLayout
+        android:id="@+id/refresh_store_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/base_dimen_18"
+        android:layout_marginRight="@dimen/base_dimen_18"
+        >
+
+        <include layout="@layout/refresh_head" />
+
+        <com.digoshop.app.module.arrountshops.view.PullableGridView
+            android:id="@+id/gv_saleactivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="@dimen/base_dimen_20"
+            android:numColumns="2"
+            android:verticalSpacing="@dimen/base_dimen_20" />
+
+
+        <include layout="@layout/load_more" />
+
+    </com.digoshop.app.module.arrountshops.view.PullToRefreshLayout>
+
+    <com.digoshop.app.module.arrountshops.view.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.digoshop.app.module.arrountshops.view.PullableListView
+            android:id="@+id/lv_mygift"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@color/gray"
+            android:dividerHeight="@dimen/base_dimen_1" />
+
+        <include layout="@layout/load_more" />
+    </com.digoshop.app.module.arrountshops.view.PullToRefreshLayout>
+
+    <!--<ListView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/lv_mygift" >-->
+    <!--</ListView>-->
+
+</LinearLayout>

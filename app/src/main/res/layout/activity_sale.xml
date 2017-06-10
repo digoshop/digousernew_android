@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+    <com.digoshop.app.module.arrountshops.htextview.TextsHorizonScrollView
+        android:id="@+id/sale_textviewsc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/lin_coupon_type_all"
+        android:layout_toRightOf="@+id/text_coupon_jingxuan"
+        android:scrollbars="none" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_20"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:background="#EEEEEE" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager_sale"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f8f8" />
+
+
+</LinearLayout>

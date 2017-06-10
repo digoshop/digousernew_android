@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_home_salepro_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base_dimen_20">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/base_dimen_34"
+                android:layout_height="@dimen/base_dimen_34"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/iv_ahome_huangou" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分换购"
+                android:layout_marginLeft="@dimen/base_dimen_10"
+                android:layout_gravity="center_vertical"
+                android:textColor="#333333"
+                android:textSize="@dimen/base_dimen_26" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_homesalepro_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="更多兑换商品"
+                android:textColor="#999999"
+                android:textSize="@dimen/base_dimen_20" />
+
+            <ImageView
+                android:layout_width="@dimen/base_dimen_25"
+                android:layout_height="@dimen/base_dimen_25"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:background="@drawable/kuozhan"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.digoshop.app.module.home.hscrollview.ClubsHorizonScrollView
+        android:id="@+id/clubs_horizon_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" />
+
+</LinearLayout>

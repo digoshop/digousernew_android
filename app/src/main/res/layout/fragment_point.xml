@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <ScrollView
+        android:id="@+id/sv_point_fr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/base_dimen_60">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_500"
+                android:background="#e4f3fa">
+
+                <RelativeLayout
+                    android:id="@+id/re_sign"
+                    android:layout_width="@dimen/base_dimen_236"
+                    android:layout_height="@dimen/base_dimen_236"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/base_dimen_40"
+                    android:background="@drawable/a_point_btn_bg">
+
+                    <TextView
+                        android:id="@+id/tv_Sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="签到"
+                        android:textColor="@color/white_text"
+                        android:textSize="@dimen/base_dimen_40" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/re_sign"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/base_dimen_2"
+                    android:gravity="center"
+                    android:text="我的积分:0"
+                    android:textColor="@color/title_bar_bg"
+                    android:textSize="@dimen/base_dimen_26" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_120"
+                    android:layout_below="@id/tv_integral"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/base_dimen_30"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/base_dimen_80"
+                            android:layout_height="@dimen/base_dimen_80"
+                            android:layout_gravity="center_horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_signOne"
+                                android:layout_width="@dimen/base_dimen_80"
+                                android:layout_height="@dimen/base_dimen_80"
+                                android:background="@drawable/a_shape_yuanhui"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="+5"
+                                android:textColor="@color/hui"
+                                android:textSize="@dimen/base_dimen_24" />
+
+                            <ImageView
+                                android:id="@+id/iv_sign_allow_one"
+                                android:layout_width="@dimen/base_dimen_28"
+                                android:layout_height="@dimen/base_dimen_28"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/a_ponit_allow"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_oneday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/base_dimen_10"
+                            android:text="1天"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/base_dimen_20" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/base_dimen_80"
+                            android:layout_height="@dimen/base_dimen_80"
+                            android:layout_gravity="center_horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_anotherday"
+                                android:layout_width="@dimen/base_dimen_80"
+                                android:layout_height="@dimen/base_dimen_80"
+                                android:background="@drawable/a_shape_yuanhui"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="+10"
+                                android:textColor="@color/hui"
+                                android:textSize="@dimen/base_dimen_24" />
+
+                            <ImageView
+                                android:id="@+id/iv_sign_allow_two"
+                                android:layout_width="@dimen/base_dimen_28"
+                                android:layout_height="@dimen/base_dimen_28"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/a_ponit_allow"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_anotherday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/base_dimen_10"
+                            android:text="2天"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/base_dimen_20" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/base_dimen_80"
+                            android:layout_height="@dimen/base_dimen_80"
+                            android:layout_gravity="center_horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_Threedays"
+                                android:layout_width="@dimen/base_dimen_80"
+                                android:layout_height="@dimen/base_dimen_80"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/a_shape_yuanhui"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="+15"
+                                android:textColor="@color/hui"
+                                android:textSize="@dimen/base_dimen_24" />
+
+                            <ImageView
+                                android:id="@+id/iv_sign_allow_three"
+                                android:layout_width="@dimen/base_dimen_28"
+                                android:layout_height="@dimen/base_dimen_28"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/a_ponit_allow"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_Threedays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/base_dimen_10"
+                            android:text="3天"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/base_dimen_20" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/base_dimen_80"
+                            android:layout_height="@dimen/base_dimen_80"
+                            android:layout_gravity="center_horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_Fourdays"
+                                android:layout_width="@dimen/base_dimen_80"
+                                android:layout_height="@dimen/base_dimen_80"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/a_shape_yuanhui"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="+20"
+                                android:textColor="@color/hui"
+                                android:textSize="@dimen/base_dimen_24" />
+
+                            <ImageView
+                                android:id="@+id/iv_sign_allow_four"
+                                android:layout_width="@dimen/base_dimen_28"
+                                android:layout_height="@dimen/base_dimen_28"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/a_ponit_allow"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_Fourdays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/base_dimen_10"
+                            android:text="4天"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/base_dimen_20" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/base_dimen_80"
+                            android:layout_height="@dimen/base_dimen_80"
+                            android:layout_gravity="center_horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_Fivedays"
+                                android:layout_width="@dimen/base_dimen_80"
+                                android:layout_height="@dimen/base_dimen_80"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/a_shape_yuanhui"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="+25"
+                                android:textColor="@color/hui"
+                                android:textSize="@dimen/base_dimen_24" />
+
+                            <ImageView
+                                android:id="@+id/iv_sign_allow_five"
+                                android:layout_width="@dimen/base_dimen_28"
+                                android:layout_height="@dimen/base_dimen_28"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/a_ponit_allow"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_Fivedays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/base_dimen_10"
+                            android:text="5天"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/base_dimen_20" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/base_dimen_80"
+                            android:layout_height="@dimen/base_dimen_80"
+                            android:layout_gravity="center_horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_Sixdays"
+                                android:layout_width="@dimen/base_dimen_80"
+                                android:layout_height="@dimen/base_dimen_80"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/a_shape_yuanhui"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="+30"
+                                android:textColor="@color/hui"
+                                android:textSize="@dimen/base_dimen_24" />
+
+                            <ImageView
+                                android:id="@+id/iv_sign_allow_six"
+                                android:layout_width="@dimen/base_dimen_28"
+                                android:layout_height="@dimen/base_dimen_28"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/a_ponit_allow"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_Sixdays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/base_dimen_10"
+                            android:text="6天"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/base_dimen_20" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/base_dimen_80"
+                            android:layout_height="@dimen/base_dimen_80"
+                            android:layout_gravity="center_horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_sevendays"
+                                android:layout_width="@dimen/base_dimen_80"
+                                android:layout_height="@dimen/base_dimen_80"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/a_shape_yuanhui"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="+35"
+                                android:textColor="@color/hui"
+                                android:textSize="@dimen/base_dimen_24" />
+
+                            <ImageView
+                                android:id="@+id/iv_sign_allow_seven"
+                                android:layout_width="@dimen/base_dimen_28"
+                                android:layout_height="@dimen/base_dimen_28"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/a_ponit_allow"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_sevendays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/base_dimen_10"
+                            android:text="7天"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/base_dimen_20" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_20"
+                android:background="#f5f5f5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_20">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/Preferentialactivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/l_duihuan" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/base_dimen_12"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="积分兑换"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/base_dimen_30" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ponint_aty"
+                                android:textColor="#cccccc"
+                                android:textSize="@dimen/base_dimen_20" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/base_dimen_2"
+                    android:layout_height="match_parent"
+                    android:background="#F9F9F9" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/l_lingjuan" />
+
+                        <LinearLayout
+                            android:id="@+id/Rollcollarcore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/base_dimen_12"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="领优惠券"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/base_dimen_30" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ponint_cou"
+                                android:textColor="#cccccc"
+                                android:textSize="@dimen/base_dimen_20" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_20"
+                android:background="#f5f5f5" />
+
+            <RelativeLayout
+                android:id="@+id/re_ponit_aty"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_80"
+                android:background="#ffffff"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/base_dimen_32"
+                        android:layout_height="@dimen/base_dimen_32"
+                        android:background="@drawable/a_point_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_home_zsp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_10"
+                        android:text="缤纷活动，惠在其中"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/base_dimen_26" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <com.digoshop.app.module.storedetail.view.ListViewForScrollView
+                android:id="@+id/lv_couponactive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:divider="@color/transparent"
+                android:dividerHeight="@dimen/base_dimen_20" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

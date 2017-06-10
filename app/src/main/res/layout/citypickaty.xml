@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/content_bg"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:background="@color/shadow"/>
+
+    <include layout="@layout/view_search"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <ListView
+            android:id="@+id/listview_all_city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/tv_letter_overlay"
+            android:layout_width="@dimen/base_dimen_240"
+            android:layout_height="@dimen/base_dimen_240"
+            android:layout_centerInParent="true"
+            android:background="@drawable/overlay_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/base_dimen_96"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <com.digoshop.app.module.home.cityselect.view.SideLetterBar
+            android:id="@+id/side_letter_bar"
+            android:layout_width="@dimen/base_dimen_72"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"/>
+        <com.digoshop.app.module.home.cityselect.view.SideLetterBarNoHot
+            android:id="@+id/side_letter_bar_nohot"
+            android:visibility="gone"
+            android:layout_width="@dimen/base_dimen_72"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"/>
+        <ListView
+            android:id="@+id/listview_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone"/>
+
+        <include layout="@layout/view_no_search_result"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

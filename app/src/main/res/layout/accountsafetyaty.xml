@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#efeff4"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_40"
+            android:textSize="@dimen/base_dimen_30"
+            android:text="账户"
+            android:textColor="@color/black_text"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_90"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_usern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:text="用户名"
+            android:textSize="@dimen/base_dimen_30"
+            android:textColor="@color/black_text"
+            />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_28"
+            android:text=""
+            android:textSize="@dimen/base_dimen_30"
+            android:textColor="@color/black"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:background="#dcdcdc">
+        </View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_90"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:text="@string/modifphone_text"
+            android:textSize="@dimen/base_dimen_30"
+            android:textColor="@color/black_text"
+            />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:layout_toLeftOf="@+id/iv_user_right"
+            android:text=""
+            android:textSize="@dimen/base_dimen_30"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/iv_user_right"
+            android:layout_width="@dimen/base_dimen_12"
+            android:layout_height="@dimen/base_dimen_21"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:src="@drawable/right_img"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:background="#dcdcdc">
+        </View>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:text="安全"
+            android:textSize="@dimen/base_dimen_30"
+            android:textColor="@color/black_text"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_90"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:text="密码修改"
+            android:textSize="@dimen/base_dimen_30"
+            android:textColor="@color/black_text"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_pass_right"
+            android:layout_width="@dimen/base_dimen_12"
+            android:layout_height="@dimen/base_dimen_21"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:src="@drawable/right_img"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:background="#dcdcdc">
+        </View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_cache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_90"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:text="清空缓存"
+            android:textSize="@dimen/base_dimen_30"
+            android:textColor="@color/black_text"
+            />
+
+        <TextView
+            android:id="@+id/tv_cache_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:layout_toLeftOf="@+id/iv_cache_right"
+            android:text="12MB"
+            android:textSize="@dimen/base_dimen_30"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/iv_cache_right"
+            android:layout_width="@dimen/base_dimen_12"
+            android:layout_height="@dimen/base_dimen_21"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:src="@drawable/right_img"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:background="#dcdcdc">
+        </View>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_86"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_qrcode_return"
+            android:layout_width="@dimen/base_dimen_48"
+            android:layout_height="@dimen/base_dimen_48"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:onClick="OnTitleReturnClick"
+            android:src="@drawable/title_return" />
+
+        <View
+            android:layout_width="@dimen/base_dimen_1"
+            android:layout_height="@dimen/base_dimen_40"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/base_dimen_20"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:background="#ffffff"
+            android:paddingBottom="@dimen/base_dimen_10"
+            android:paddingTop="@dimen/base_dimen_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:text="我的二维码"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/base_dimen_36" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/base_dimen_30"
+        android:background="@drawable/my_qrcode_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:id="@+id/re_qrcode_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_marginTop="@dimen/base_dimen_30">
+
+            <ImageView
+                android:id="@+id/iv_qrcode_touxiang"
+                android:layout_width="@dimen/base_dimen_100"
+                android:layout_height="@dimen/base_dimen_100"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:src="@drawable/grzx_touxiang" />
+
+            <TextView
+                android:id="@+id/tv_qrcode_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/iv_qrcode_touxiang"
+                android:text="用户名字"
+                android:textColor="#000000"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:id="@+id/tv_qrcode_userphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_qrcode_username"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/base_dimen_10"
+                android:layout_toRightOf="@id/iv_qrcode_touxiang"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="@dimen/base_dimen_30" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_qrcodetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/base_dimen_40"
+            android:layout_marginLeft="@dimen/base_dimen_40"
+            android:layout_marginRight="@dimen/base_dimen_40"
+            android:layout_marginTop="@dimen/base_dimen_40"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_qrcodemessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="请在结账时，出示此会员二维码"
+                android:textColor="#000000"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <TextView
+                android:id="@+id/tv_qrcodemessage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+
+                android:text="将自动使用优惠券，并获得积分。"
+                android:textColor="#000000"
+                android:textSize="@dimen/base_dimen_30" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_qrcodecontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/lin_qrcodetv"
+            android:layout_below="@id/re_qrcode_message"
+            android:layout_marginTop="@dimen/base_dimen_20" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/base_dimen_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_atydetail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/base_dimen_10"
+                android:paddingLeft="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_10"
+                android:textColor="#000000"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <RelativeLayout
+                android:id="@+id/re_atydetail_shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_atydetail_storename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:paddingBottom="@dimen/base_dimen_10"
+                    android:paddingLeft="@dimen/base_dimen_20"
+                    android:singleLine="true"
+                    android:textColor="#C4C4C4"
+                    android:textSize="@dimen/base_dimen_24" />
+
+                <ImageView
+
+                    android:layout_width="@dimen/base_dimen_30"
+                    android:layout_height="@dimen/base_dimen_30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_atydetail_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/base_dimen_20"
+                android:textColor="#C4C4C4"
+                android:textSize="@dimen/base_dimen_24" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginTop="@dimen/base_dimen_10"
+                android:background="#eeeeee"
+                android:paddingLeft="@dimen/base_dimen_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff"
+                android:padding="@dimen/base_dimen_20">
+
+                <ImageView
+                    android:id="@+id/iv_atydetail_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/defaulhomehuan"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_20">
+
+                <LinearLayout
+                    android:id="@+id/lin_atydetailgps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_activitydetail_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/base_dimen_20"
+                        android:textColor="#C4C4C4"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <ImageView
+                        android:id="@+id/iv_atydetial_icon"
+                        android:layout_width="@dimen/base_dimen_18"
+                        android:layout_height="@dimen/base_dimen_24"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/tv_activitydetail_distance"
+                        android:paddingRight="@dimen/base_dimen_6"
+                        android:src="@drawable/juli"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_atydetail_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/lin_atydetailgps"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/base_dimen_20"
+                    android:textColor="#C4C4C4"
+                    android:textSize="@dimen/base_dimen_28" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_12"
+                android:background="#EEEEEE" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_20"
+                android:layout_marginTop="@dimen/base_dimen_20">
+
+                <TextView
+                    android:id="@+id/tv_atydetail_conent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="@dimen/base_dimen_30"
+                    android:paddingRight="@dimen/base_dimen_30"
+                    android:text="活动详情"
+                    android:textColor="#F39800"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_60"
+                    android:layout_toLeftOf="@+id/tv_atydetail_conent"
+                    android:background="#eeeeee" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/base_dimen_60"
+                    android:layout_toRightOf="@+id/tv_atydetail_conent"
+                    android:background="#eeeeee" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_atydetail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/base_dimen_10"
+                android:paddingLeft="@dimen/base_dimen_20"
+                android:paddingRight="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_10"
+                android:textColor="#454545"
+                android:textSize="@dimen/base_dimen_30" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

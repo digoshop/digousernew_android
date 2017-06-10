@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:layout_marginTop="@dimen/base_dimen_20">
+
+        <ImageView
+            android:id="@+id/iv_shopinvite_item_img"
+            android:layout_width="@dimen/base_dimen_240"
+            android:layout_height="@dimen/base_dimen_160"
+
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:layout_marginRight="@dimen/base_dimen_10" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_shopinvite_item_img"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_assect_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_shopinvite_itme_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商家名称"
+                    android:ellipsize="end"
+                    android:maxEms="18"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <ImageView
+                    android:layout_width="@dimen/base_dimen_32"
+                    android:layout_height="@dimen/base_dimen_32"
+                    android:layout_marginLeft="@dimen/base_dimen_30"
+                    android:src="@drawable/jiantouquan" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_shopinvite_itme_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:layout_toRightOf="@id/iv_shopinvite_item_img"
+                android:text="联系电话"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/base_dimen_100"
+                android:ellipsize="end"
+                android:textColor="#f39902"
+                android:textSize="@dimen/base_dimen_30" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tv_shopinvite_itme_addres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:layout_marginTop="@dimen/base_dimen_24"
+                android:layout_toRightOf="@id/iv_shopinvite_item_img"
+                android:maxLines="1"
+                android:text="地址"
+                android:textColor="#aeaeaf"
+                android:textSize="@dimen/base_dimen_30" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_acceptet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:background="@drawable/shape_lanyuan"
+            android:gravity="center"
+            android:text="接受"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/base_dimen_22" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:paddingBottom="@dimen/base_dimen_10"
+        android:paddingTop="@dimen/base_dimen_10">
+
+        <TextView
+            android:id="@+id/tv_replytime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:textColor="#505051"
+            android:textSize="@dimen/base_dimen_26" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:text="商家邀请您成为会员,享有更多优惠"
+            android:textColor="#505051"
+            android:textSize="@dimen/base_dimen_26" />
+    </RelativeLayout>
+</LinearLayout>

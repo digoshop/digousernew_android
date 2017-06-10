@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/base_dimen_4"
+    android:layout_marginRight="@dimen/base_dimen_4"
+    android:background="@color/white_text">
+
+    <ImageView
+        android:id="@+id/iv_salepro_itme"
+        android:layout_width="@dimen/base_dimen_210"
+        android:layout_height="@dimen/base_dimen_140"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_duihuanprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_salepro_itme"
+        android:layout_centerHorizontal="true"
+        android:textColor="#e50012"
+        android:textSize="@dimen/base_dimen_26" />
+
+    <TextView
+        android:id="@+id/tv_shichangprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_duihuanprice"
+        android:layout_centerHorizontal="true"
+        android:textColor="#cccccc"
+        android:textSize="@dimen/base_dimen_24" />
+</RelativeLayout>

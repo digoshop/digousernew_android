@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/base_dimen_20">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#f5f5f5"
+        android:layout_height="@dimen/base_dimen_720"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_prodetail_couponnv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:text="优惠券"
+            android:textColor="#969495"
+            android:textSize="@dimen/base_dimen_40" />
+
+        <ImageView
+            android:id="@+id/iv_shop_coupon_colose"
+            android:layout_width="@dimen/base_dimen_50"
+            android:layout_height="@dimen/base_dimen_50"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/base_dimen_10"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:background="@drawable/a_shop_coupon_close" />
+
+        <ListView
+            android:id="@+id/lv_prodetail_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tv_prodetail_couponnv"
+            android:padding="@dimen/base_dimen_20" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

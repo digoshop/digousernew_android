@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/base_dimen_72"
+    android:layout_marginBottom="@dimen/base_dimen_16"
+    android:layout_marginLeft="@dimen/base_dimen_32"
+    android:layout_marginRight="@dimen/base_dimen_32"
+    android:layout_marginTop="@dimen/base_dimen_16"
+    android:gravity="center_vertical"
+    android:background="@drawable/search_box_bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/base_dimen_16"
+        android:paddingRight="@dimen/base_dimen_16"
+        android:src="@drawable/ic_search"
+        android:scaleType="center"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="@string/hint_search_box"
+        android:textColorHint="@color/gray"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/base_dimen_28"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/iv_search_clear"
+        android:layout_width="@dimen/base_dimen_30"
+        android:layout_height="@dimen/base_dimen_30"
+        android:paddingLeft="@dimen/base_dimen_16"
+        android:paddingRight="@dimen/base_dimen_16"
+        android:src="@drawable/ic_search_clear"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+</LinearLayout>

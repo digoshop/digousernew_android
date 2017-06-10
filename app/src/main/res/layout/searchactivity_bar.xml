@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title_bar_bg"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_searchactivity_return"
+        android:layout_width="@dimen/base_dimen_48"
+        android:layout_height="@dimen/base_dimen_48"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/base_dimen_20"
+        android:layout_marginRight="@dimen/base_dimen_20"
+        android:padding="@dimen/base_dimen_3"
+        android:src="@drawable/title_return" />
+
+    <RelativeLayout
+        android:id="@+id/lin_search_saomao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_home_saomao"
+            android:layout_width="@dimen/base_dimen_42"
+            android:layout_height="@dimen/base_dimen_42"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/base_dimen_8"
+            android:src="@drawable/new_scan" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/base_dimen_12"
+        android:layout_marginRight="@dimen/base_dimen_6"
+        android:layout_marginTop="@dimen/base_dimen_12"
+
+        android:layout_toLeftOf="@+id/lin_search_saomao"
+        android:layout_toRightOf="@id/iv_searchactivity_return"
+        android:background="@drawable/shape_life_search">
+
+        <LinearLayout
+            android:id="@+id/lin_search_title"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_homefragment_searchtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:text="店铺"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/base_dimen_32" />
+
+            <ImageView
+                android:layout_gravity="bottom"
+                android:id="@+id/iv_homefragment_arrow"
+                android:layout_width="@dimen/base_dimen_10"
+                android:layout_height="@dimen/base_dimen_10"
+                android:layout_marginBottom="@dimen/base_dimen_5"
+                android:layout_marginLeft="@dimen/base_dimen_10"
+                android:background="@drawable/ss_spjiantou" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_homefragment_serachline"
+            android:layout_width="@dimen/base_dimen_4"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/base_dimen_10"
+            android:layout_toRightOf="@id/lin_search_title"
+            android:background="#00A0E8"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_homefragment_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_10"
+            android:layout_toRightOf="@id/iv_homefragment_serachline"
+            android:background="@null"
+            android:hint="请输入搜索内容"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/base_dimen_20"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/base_dimen_32" />
+
+        <ImageView
+            android:id="@+id/iv_homefragment_search_go"
+            android:layout_width="@dimen/base_dimen_28"
+            android:layout_height="@dimen/base_dimen_28"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:src="@drawable/search_icon_home" />
+    </RelativeLayout>
+
+</RelativeLayout>

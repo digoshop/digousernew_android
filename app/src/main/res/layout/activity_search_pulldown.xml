@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/base_dimen_150"
+    android:layout_height="@dimen/base_dimen_176"
+    android:background="@drawable/ss_tc"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/base_dimen_26" >
+
+    <RelativeLayout
+        android:id="@+id/re_search_type_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/base_dimen_40" >
+
+            <ImageView
+                android:layout_width="@dimen/base_dimen_30"
+                android:layout_height="@dimen/base_dimen_30"
+                android:background="@drawable/ss_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_10"
+                android:textSize="@dimen/base_dimen_30"
+                android:text="商品"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_search_type_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout  android:layout_marginLeft="@dimen/base_dimen_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/base_dimen_30"
+                android:layout_height="@dimen/base_dimen_30"
+                android:background="@drawable/ss_fw" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_10"
+                android:text="店铺"
+                android:textSize="@dimen/base_dimen_30"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

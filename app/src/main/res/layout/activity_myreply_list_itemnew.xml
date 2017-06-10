@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:id="@+id/lin_myreply_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_90"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:paddingRight="@dimen/base_dimen_20">
+
+        <ImageView
+            android:id="@+id/iv_user_com_icon"
+            android:layout_width="@dimen/base_dimen_50"
+            android:layout_height="@dimen/base_dimen_50"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_myreply_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_40"
+            android:layout_toRightOf="@+id/iv_user_com_icon"
+            android:textColor="#000000"
+            android:textSize="@dimen/base_dimen_32" />
+
+        <TextView
+            android:id="@+id/tv_myreply_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_40"
+            android:textColor="#9e9e9e"
+            android:textSize="@dimen/base_dimen_26" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:background="#efefef" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/base_dimen_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评分:"
+            android:textColor="#000000"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <ImageView
+            android:id="@+id/iv_myreply_type"
+            android:layout_width="@dimen/base_dimen_32"
+            android:layout_height="@dimen/base_dimen_32"
+            android:layout_marginLeft="@dimen/base_dimen_40"
+            android:background="@drawable/reply_a" />
+
+        <TextView
+            android:id="@+id/tv_myreply_item_replytype_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:textColor="@color/yellow_a"
+            android:textSize="@dimen/base_dimen_30" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginBottom="@dimen/base_dimen_10"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/base_dimen_20">
+
+        <TextView
+            android:id="@+id/tv_myreply_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9e9e9e"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/iv_comment1"
+                android:layout_width="@dimen/base_dimen_194"
+                android:layout_height="@dimen/base_dimen_194"
+                android:layout_marginRight="@dimen/base_dimen_10"
+                android:src="@drawable/kcx_001"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_comment2"
+                android:layout_width="@dimen/base_dimen_194"
+                android:layout_height="@dimen/base_dimen_194"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="@dimen/base_dimen_10"
+                android:layout_marginRight="@dimen/base_dimen_10"
+                android:src="@drawable/kcx_001"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_comment3"
+                android:layout_width="@dimen/base_dimen_194"
+                android:layout_height="@dimen/base_dimen_194"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="@dimen/base_dimen_10"
+                android:layout_marginRight="@dimen/base_dimen_10"
+                android:src="@drawable/kcx_001"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.github.library.bubbleview.BubbleTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_reply_text"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/base_dimen_20"
+        android:text=""
+        android:layout_marginLeft="@dimen/base_dimen_40"
+        android:layout_marginRight="@dimen/base_dimen_20"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:textColor="#8a8a8a"
+        app:angle="@dimen/base_dimen_16"
+        app:arrowCenter="false"
+        app:arrowHeight="@dimen/base_dimen_20"
+        app:arrowLocation="top"
+        app:arrowPosition="@dimen/base_dimen_28"
+        app:arrowWidth="@dimen/base_dimen_25"
+        app:bubbleColor="#f8f8f8" />
+
+</LinearLayout>

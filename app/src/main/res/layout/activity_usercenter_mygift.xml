@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_95"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_usercoupon_no_use"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/categoryitmebgc"
+            android:gravity="center"
+            android:text="未结算"
+            android:textColor="#EA5513"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <View
+            android:layout_width="@dimen/base_dimen_1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/base_dimen_30"
+            android:layout_marginTop="@dimen/base_dimen_30"
+            android:background="#cccccc"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_usercoupon_past_due"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/categoryitmebg"
+            android:gravity="center"
+            android:text="已结算"
+            android:textColor="#000000"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <View
+            android:layout_width="@dimen/base_dimen_1"
+            android:layout_height="match_parent"
+            android:background="#cccccc"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_usercoupon_already_use"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/categoryitmebg"
+            android:gravity="center"
+            android:text="已过期"
+            android:textColor="#000000"
+            android:textSize="@dimen/base_dimen_30" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:background="#cccccc" />
+
+    <RelativeLayout
+        android:id="@+id/re_nomycouponlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_20"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_shopnomsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_30"
+            android:gravity="center"
+            android:text="暂无商品"
+            android:textColor="@color/black"
+            android:textSize="@dimen/base_dimen_32" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_shoplistlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/base_dimen_180"
+        android:padding="@dimen/base_dimen_10"
+        android:layout_gravity="center"
+        android:background="@drawable/a_shape_huibai"
+        android:text="点击登录"
+        android:textColor="@color/black"
+        android:textSize="@dimen/base_dimen_32" />
+
+    <com.digoshop.app.module.arrountshops.view.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.digoshop.app.module.arrountshops.view.PullableListView
+            android:id="@+id/lv_mygift"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@color/gray"
+            android:dividerHeight="@dimen/base_dimen_1" />
+
+        <include layout="@layout/load_more" />
+    </com.digoshop.app.module.arrountshops.view.PullToRefreshLayout>
+
+    <!--<ListView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/lv_mygift" >-->
+    <!--</ListView>-->
+
+</LinearLayout>

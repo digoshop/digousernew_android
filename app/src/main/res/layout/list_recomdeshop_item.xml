@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_shopmessage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_text"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/base_dimen_15"
+    android:paddingTop="@dimen/base_dimen_15"
+    android:paddingLeft="@dimen/base_dimen_20">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/base_dimen_180"
+        android:layout_height="@dimen/base_dimen_160" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/base_dimen_20"
+        android:paddingBottom="@dimen/base_dimen_20"
+        android:paddingTop="@dimen/base_dimen_20">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:text="店"
+            android:textColor="#454545"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_title"
+            android:layout_marginLeft="@dimen/base_dimen_10"
+            android:paddingBottom="@dimen/base_dimen_8"
+            android:layout_toRightOf="@+id/tv_title"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_dui_comshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_8"
+                android:background="@drawable/a_shape_dui_huang"
+                android:paddingLeft="@dimen/base_dimen_4"
+                android:paddingRight="@dimen/base_dimen_4"
+                android:text="兑"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/base_dimen_20" />
+
+            <TextView
+                android:id="@+id/tv_hui_comshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_8"
+                android:background="@drawable/a_shape_hui_lan"
+                android:paddingLeft="@dimen/base_dimen_4"
+                android:paddingRight="@dimen/base_dimen_4"
+                android:text="惠"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/base_dimen_20" />
+
+            <TextView
+                android:id="@+id/tv_quan_comshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_8"
+                android:background="@drawable/a_shape_quan_lv"
+                android:paddingLeft="@dimen/base_dimen_4"
+                android:paddingRight="@dimen/base_dimen_4"
+                android:text="券"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/base_dimen_20" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/base_dimen_12"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="经营类别"
+                android:textColor="#969696"
+                android:textSize="@dimen/base_dimen_24" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="@dimen/base_dimen_34"
+                android:layout_height="@dimen/base_dimen_32"
+                android:src="@drawable/shopgoodd" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toLeftOf="@+id/imageView4"
+                android:text="0好评"
+                android:textColor="#F39800"
+                android:textSize="@dimen/base_dimen_24" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_shopaddres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:maxLength="14"
+            android:singleLine="true"
+            android:text="暂无地址"
+            android:textColor="#969696"
+            android:textSize="@dimen/base_dimen_24" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/base_dimen_16"
+
+            android:layout_toLeftOf="@+id/textView5"
+            android:src="@drawable/shopgps"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/base_dimen_30"
+            android:text=""
+            android:textColor="#969696"
+            android:textSize="@dimen/base_dimen_20" />
+    </RelativeLayout>
+
+
+</LinearLayout>

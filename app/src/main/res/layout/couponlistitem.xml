@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding= "10dp"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/re_couponleft"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_lan">
+
+
+        <RelativeLayout
+            android:id="@+id/re_coupon_item_bg_ctid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:id="@+id/re_couponitme_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_coupon_item_money_cbca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50"
+                        android:textColor="@color/white_text"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/tv_coupon_item_money_cbca_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="@color/white_text"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/tv_coupon_item_bg_ctid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/texttouming"
+                    android:text="代金卷"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:textColor="@color/white_text"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/re_couponactive_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/re_couponitme_left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_coupon_item_cbn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="店铺名字"
+                    android:maxEms="8"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/white_text" />
+
+
+                <TextView
+                    android:id="@+id/tv_coupon_item_tiaojian_cbcf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="使用条件"
+                    android:textColor="@color/white_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_coupon_item_operates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/tv_coupon_item_tiaojian_cbcf"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/texttouming"
+                    android:ellipsize="end"
+                    android:maxEms="9"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:singleLine="true"
+                    android:text="全场通用"
+                    android:textColor="@color/white_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_coupon_item_time_cbvsd_cbved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="使用期限"
+                    android:textColor="@color/white_text"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/re_couponright"
+            android:layout_width="85dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_lan_right">
+
+
+            <LinearLayout
+                android:id="@+id/lin_shengyulin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="剩"
+
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_coupon_item_cbsnu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:text="90"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="张"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_couponactive_dazhe_dianji1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin_shengyulin"
+                android:layout_centerHorizontal="true"
+                android:text="立即领取"
+                android:background="@drawable/texttouming"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingRight="6dp"
+                android:textColor="@color/white_text"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/iv_islingqu"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="-5dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/base_dimen_18"
+            android:layout_height="100dp"
+            android:layout_marginRight="-8dp"
+
+            android:layout_toLeftOf="@+id/re_couponright"
+            android:background="@drawable/ppting_line" />
+
+    </RelativeLayout>
+</LinearLayout>

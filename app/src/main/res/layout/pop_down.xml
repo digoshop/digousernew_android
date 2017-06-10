@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_down"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pop_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="百度" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#6C6C1D" />
+
+    <TextView
+        android:id="@+id/pop_t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="腾讯" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#6C6C1D" />
+
+    <TextView
+        android:id="@+id/pop_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="阿里巴巴" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

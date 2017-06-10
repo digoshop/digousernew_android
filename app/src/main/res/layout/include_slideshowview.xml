@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:more="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_text"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:indicator_width="@dimen/base_dimen_15"
+        app:indicator_height="@dimen/base_dimen_15"
+        app:indicator_margin="@dimen/base_dimen_5"
+        app:indicator_drawable_selected="@drawable/a_shape_banner_lan"
+        app:indicator_drawable_unselected="@drawable/a_shape_banner_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/tv_storedetail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base_dimen_10"
+        android:text="商场名字"
+        android:textColor="@color/black"
+        android:textSize="@dimen/base_dimen_36" />
+
+    <com.digoshop.app.module.storedetail.view.MoreTextView
+        android:id="@+id/tv_MoreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base_dimen_10"
+        android:layout_marginLeft="@dimen/base_dimen_10"
+        android:layout_marginRight="@dimen/base_dimen_10"
+        more:maxLine="2"
+        more:text="@string/content"
+        more:textColor="#B7B7B7"
+        more:textSize="@dimen/base_dimen_30" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_12">
+
+        <include
+            android:id="@+id/shopping_Layout"
+            layout="@layout/include_detailed_location" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:background="@drawable/navigation_lineimg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#F7F7F7"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_1"
+            android:background="#DADADA"
+            android:gravity="center"
+            android:paddingTop="@dimen/base_dimen_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_8"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginTop="@dimen/base_dimen_8"
+                android:background="@drawable/sales_coupon"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="@dimen/base_dimen_1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/base_dimen_10"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:layout_marginTop="@dimen/base_dimen_10"
+                android:background="#c1d0dd"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_10"
+                    android:background="@drawable/tuijian"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_homediscount_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/base_dimen_30"
+                    android:textColor="@color/home_search_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_1"
+            android:background="#DADADA"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_16" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_text"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/base_dimen_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="入驻商铺"
+                android:textSize="@dimen/base_dimen_30"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_storedetail_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:text=""
+                android:textColor="@color/cese"
+                android:textSize="@dimen/base_dimen_50" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:text="家"
+                android:textSize="@dimen/base_dimen_30"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <com.digoshop.app.module.storedetail.view.GridViewForScrollView
+            android:id="@+id/gridview_main"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:columnWidth="@dimen/base_dimen_180"
+            android:verticalSpacing="@dimen/base_dimen_20"
+            android:horizontalSpacing="@dimen/base_dimen_20"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:layout_marginBottom="@dimen/base_dimen_20"
+            android:stackFromBottom="false" />
+    </LinearLayout>
+
+</LinearLayout>

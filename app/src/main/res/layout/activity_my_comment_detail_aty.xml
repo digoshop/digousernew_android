@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_comment_detail_aty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.digoshop.app.module.userCenter.module.MyCommentDetailAty">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_90"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:paddingRight="@dimen/base_dimen_20">
+
+        <ImageView
+            android:id="@+id/iv_user_com_icon"
+            android:layout_width="@dimen/base_dimen_50"
+            android:layout_height="@dimen/base_dimen_50"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_user_comname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_40"
+            android:layout_toRightOf="@+id/iv_user_com_icon"
+            android:textColor="#000000"
+            android:textSize="@dimen/base_dimen_32" />
+
+        <TextView
+            android:id="@+id/tv_user_comtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_40"
+            android:textColor="#9e9e9e"
+            android:textSize="@dimen/base_dimen_26" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:background="#efefef" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8f8"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/base_dimen_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评分:"
+            android:textColor="#000000"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <ImageView
+            android:id="@+id/iv_myreply_type"
+            android:layout_width="@dimen/base_dimen_32"
+            android:layout_height="@dimen/base_dimen_32"
+            android:layout_marginLeft="@dimen/base_dimen_40"
+            android:background="@drawable/reply_a" />
+
+        <TextView
+            android:id="@+id/tv_user_comtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:textColor="@color/yellow_a"
+            android:textSize="@dimen/base_dimen_30" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8f8"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/base_dimen_30"
+        android:paddingTop="@dimen/base_dimen_20">
+
+        <TextView
+            android:id="@+id/tv_user_comtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9e9e9e"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_10"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/iv_comment1"
+                android:layout_width="@dimen/base_dimen_120"
+                android:layout_height="@dimen/base_dimen_120"
+                android:layout_marginRight="@dimen/base_dimen_10"
+                android:src="@drawable/kcx_001"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_comment2"
+                android:layout_width="@dimen/base_dimen_120"
+                android:layout_height="@dimen/base_dimen_120"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="@dimen/base_dimen_10"
+                android:layout_marginRight="@dimen/base_dimen_10"
+                android:src="@drawable/kcx_001"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_comment3"
+                android:layout_width="@dimen/base_dimen_120"
+                android:layout_height="@dimen/base_dimen_120"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="@dimen/base_dimen_10"
+                android:layout_marginRight="@dimen/base_dimen_10"
+                android:src="@drawable/kcx_001"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_20"
+        android:background="#efefef" />
+
+    <LinearLayout
+        android:id="@+id/lin_shopre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8f8"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_90"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/base_dimen_40"
+            android:paddingRight="@dimen/base_dimen_20">
+
+            <ImageView
+                android:id="@+id/iv_shop_com_icon"
+                android:layout_width="@dimen/base_dimen_50"
+                android:layout_height="@dimen/base_dimen_50"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tv_shop_comname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:layout_toRightOf="@+id/iv_shop_com_icon"
+                android:textColor="#000000"
+                android:textSize="@dimen/base_dimen_32" />
+
+            <TextView
+                android:id="@+id/tv_shop_comtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:textColor="#000000"
+                android:textSize="@dimen/base_dimen_30" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_1"
+            android:background="#efefef" />
+
+        <TextView
+            android:id="@+id/tv_shop_comtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_40"
+            android:paddingBottom="@dimen/base_dimen_80"
+            android:paddingTop="@dimen/base_dimen_20"
+            android:textColor="#000000"
+            android:textSize="@dimen/base_dimen_30" />
+    </LinearLayout>
+</LinearLayout>

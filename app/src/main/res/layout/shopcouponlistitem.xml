@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/re_coupon_bg"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/manjianquan_s" >
+
+        <RelativeLayout
+            android:id="@+id/re_couponactive_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tv_couponactive_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥50"
+                android:layout_marginLeft="10dp"
+                android:textColor="#00A0E9"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_couponactive_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/tv_couponactive_money"
+                android:background="@drawable/texttouming"
+                android:text="满800可用"
+                android:textColor="#99CC00" />
+
+            <TextView
+                android:id="@+id/tv_couponactive_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_couponactive_type"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/tv_couponactive_money"
+                android:text="消耗30币"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_couponstart_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016.01.25-2016.03.11"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_couponDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="如家酒店集团淮北旗舰店"
+                android:textColor="@color/white_text" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

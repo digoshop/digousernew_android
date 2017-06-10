@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/re_coupon_all"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_all_service_product">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="全部分类"
+                android:textColor="@drawable/store_textcolor_itemgroup" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_coupon_daijin"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_all_service_product">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="代金券"
+                android:textColor="@drawable/store_textcolor_itemgroup" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_coupoin_zhekou"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_all_service_product">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="折扣券"
+                android:textColor="@drawable/store_textcolor_itemgroup" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_coupon_manjian"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/bg_all_service_product">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="满减券"
+            android:textColor="@drawable/store_textcolor_itemgroup" />
+    </RelativeLayout>
+</LinearLayout>

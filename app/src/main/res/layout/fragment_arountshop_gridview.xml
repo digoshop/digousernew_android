@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="#ffffff"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/iv_line_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_2"
+        android:layout_gravity="center_vertical"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:id="@+id/lin_lincoupointypenum"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_line_coupon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/base_dimen_30"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_gravity="center_vertical"
+            android:background="@color/textcolor_gvhui" />
+
+        <TextView
+            android:id="@+id/tv_coupontypenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_10"
+            android:layout_marginRight="@dimen/base_dimen_10"
+            android:text="全部0个分类"
+            android:textSize="@dimen/base_dimen_20"
+            android:textColor="@color/textcolor_gvhui" />
+
+        <View
+            android:layout_width="@dimen/base_dimen_30"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_gravity="center_vertical"
+            android:background="@color/textcolor_gvhui" />
+
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/gv_coupin_typepop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_belew"
+        android:layout_below="@+id/lin_lincoupointypenum"
+        android:layout_marginBottom="@dimen/base_dimen_25"
+        android:layout_marginLeft="@dimen/base_dimen_25"
+        android:layout_marginRight="@dimen/base_dimen_25"
+        android:horizontalSpacing="@dimen/base_dimen_25"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/base_dimen_25" />
+
+    <View
+        android:id="@+id/iv_belew"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_70"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent" />
+</RelativeLayout>

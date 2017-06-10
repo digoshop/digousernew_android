@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/base_dimen_560"
+    android:layout_height="@dimen/base_dimen_260"
+    android:background="@drawable/makesure_sales"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/re_salechange_dialogtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_26">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_10"
+            android:text="领取确认"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/base_dimen_36" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_pointsale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/re_salechange_dialogtitle"
+        android:layout_centerHorizontal="true"
+        android:text="此次兑换您将消费  币"
+        android:textSize="@dimen/base_dimen_30"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:textColor="#00A3F0" />
+
+
+
+    <TextView
+        android:id="@+id/tv_salechange_moreproduct"
+        android:layout_width="@dimen/base_dimen_160"
+        android:layout_height="@dimen/base_dimen_60"
+        android:layout_below="@id/tv_pointsale"
+        android:layout_marginBottom="@dimen/base_dimen_30"
+        android:layout_marginLeft="@dimen/base_dimen_60"
+        android:layout_marginTop="@dimen/base_dimen_30"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:textSize="@dimen/base_dimen_30"
+        android:text="确认"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_salechange_mygift"
+        android:layout_width="@dimen/base_dimen_160"
+        android:layout_height="@dimen/base_dimen_60"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_pointsale"
+        android:layout_marginBottom="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_60"
+        android:layout_marginTop="@dimen/base_dimen_30"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:textSize="@dimen/base_dimen_30"
+        android:text="取消"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

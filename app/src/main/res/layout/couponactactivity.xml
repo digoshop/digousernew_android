@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_86"
+        android:background="@color/title_bar_bg">
+
+        <ImageView
+            android:id="@+id/iv_title_return"
+            android:layout_width="@dimen/base_dimen_48"
+            android:layout_height="@dimen/base_dimen_48"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:onClick="OnTitleReturnClick"
+            android:src="@drawable/title_return" />
+
+
+        <LinearLayout
+            android:id="@+id/re_couponactive_type"
+            android:layout_width="@dimen/base_dimen_320"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_couponactive_coupon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@drawable/switch_button_left_checked"
+                android:gravity="center"
+                android:text="领券中心"
+                android:textColor="#000000"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_couponactive_active"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/switch_button_right"
+                android:gravity="center"
+                android:text="优惠活动"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/base_dimen_28" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.digoshop.app.module.home.view.ViewPagerCompat
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

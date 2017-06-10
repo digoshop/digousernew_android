@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="#ffffff"
+    android:id="@+id/lin_shopallcaten"
+    android:paddingLeft="@dimen/base_dimen_20"
+    android:paddingRight="@dimen/base_dimen_20"
+    android:gravity="left"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/re_shopallcate_all"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_90"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_catetwoname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="一级类别"
+            android:textColor="#333333"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="查看全部"
+            android:textColor="#999999" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:visibility="gone"
+        android:background="#f5f5f5" />
+
+    <com.digoshop.app.module.shopdetailnew.view.GridViewForScrollViewShopCate
+        android:id="@+id/gr_itemchildren"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:numColumns="2" />
+
+</LinearLayout>

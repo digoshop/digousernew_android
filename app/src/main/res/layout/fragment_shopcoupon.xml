@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_text"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_94">
+
+        <RelativeLayout
+            android:id="@+id/re_couponactive_type"
+            android:layout_width="@dimen/base_dimen_320"
+            android:layout_height="@dimen/base_dimen_70"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:background="@drawable/gouyouhuishop2">
+
+            <TextView
+                android:id="@+id/tv_couponactive_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_24"
+                android:text="领优惠券"
+                android:textColor="#000000"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_couponactive_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/base_dimen_24"
+                android:text="活动公告"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/base_dimen_28" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_couponlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/re_nocouponlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_shopnomsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="暂无优惠券"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/base_dimen_32" />
+            </RelativeLayout>
+
+            <com.digoshop.app.module.storedetail.view.ListViewForScrollView
+                android:id="@+id/listview_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/base_dimen_240"
+                android:padding="@dimen/base_dimen_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/base_dimen_10"
+                android:orientation="vertical">
+
+
+                <com.digoshop.app.module.storedetail.view.ListViewForScrollView
+                    android:id="@+id/lv_perfere_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#d9d9d9"
+                    android:dividerHeight="@dimen/base_dimen_1"
+                    android:drawSelectorOnTop="false"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

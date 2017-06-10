@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f7f7f7"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+    <include
+        layout="@layout/store_include_toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_86"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lv_seekshop_category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:scrollbars="none"
+            android:background="#ffffff"
+            android:choiceMode="singleChoice"
+            android:divider="#cccccc"
+            android:dividerHeight="@dimen/base_dimen_1"/>
+
+        <com.digoshop.app.module.arrountshops.view.PullToRefreshLayout
+            android:id="@+id/refresh_store_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="75"
+            android:background="#f7f7f7">
+
+            <include layout="@layout/refresh_head"/>
+
+            <com.digoshop.app.module.arrountshops.view.PullableScrollView
+                android:id="@+id/pullsv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f7f7f7"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/re_nolist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/base_dimen_160"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="暂无数据"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/base_dimen_32"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_20"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:layout_marginTop="@dimen/base_dimen_20">
+
+                        <ImageView
+                            android:id="@+id/iv_seekservice_ad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/defaulhomehuan"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <com.digoshop.app.module.storedetail.view.ListViewForScrollView
+                        android:id="@+id/lv_seekshopcategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/base_dimen_20"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:background="#ffffff"/>
+
+
+                </LinearLayout>
+            </com.digoshop.app.module.arrountshops.view.PullableScrollView>
+
+            <include layout="@layout/load_more"/>
+
+        </com.digoshop.app.module.arrountshops.view.PullToRefreshLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

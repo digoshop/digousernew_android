@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_home_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_home_saomao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/base_dimen_6"
+        android:layout_marginRight="@dimen/base_dimen_6"
+        android:background="@drawable/home_gps_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/base_dimen_6">
+
+
+        <TextView
+            android:id="@+id/tv_home_tvgps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_4"
+            android:ellipsize="end"
+            android:maxEms="4"
+            android:paddingBottom="@dimen/base_dimen_12"
+            android:paddingTop="@dimen/base_dimen_12"
+            android:singleLine="true"
+            android:text="定位中"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <ImageView
+            android:layout_width="@dimen/base_dimen_18"
+            android:layout_height="@dimen/base_dimen_18"
+            android:layout_marginLeft="@dimen/base_dimen_6"
+            android:src="@drawable/xiangxiajiantou" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/lin_home_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/base_dimen_10"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:padding="@dimen/base_dimen_6">
+
+        <ImageView
+            android:id="@+id/tv_homemessage"
+            android:layout_width="@dimen/base_dimen_28"
+            android:layout_height="@dimen/base_dimen_28"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/new_news" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_homemessage"
+            android:layout_centerHorizontal="true"
+            android:text="消息"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/base_dimen_24" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/re_home_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_86"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:layout_marginLeft="@dimen/base_dimen_10"
+        android:layout_marginRight="@dimen/base_dimen_10"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:layout_toLeftOf="@id/lin_home_message"
+        android:layout_toRightOf="@id/lin_home_saomao"
+        android:background="@drawable/shape_life_search"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/base_dimen_30"
+            android:layout_height="@dimen/base_dimen_30"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:background="@drawable/search_icon_home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="@string/home_search_text"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/base_dimen_30" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_homemessagetype"
+        android:layout_width="@dimen/base_dimen_9"
+        android:layout_height="@dimen/base_dimen_9"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/base_dimen_4"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:src="@drawable/xx_dian"
+        android:visibility="invisible" />
+
+</RelativeLayout>

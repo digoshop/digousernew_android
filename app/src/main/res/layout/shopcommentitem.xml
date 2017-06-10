@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/lin_myreply_bg">
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_shop_eva_icon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/touxiang" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_shop_eva_icon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_shopcomnick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北大学霸"
+                android:textColor="#454545" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="2016-3-25  18:36"
+                android:id="@+id/tv_shopcomtime"
+                android:textColor="#716F6E"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_shop_eva_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="好评"
+            android:textColor="#454545" />
+
+        <ImageView
+            android:id="@+id/iv_shop_eva_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/tv_shop_eva_type"
+          />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/iv_shop_eva_icon"
+            android:layout_marginTop="10dp"
+            android:text="评论内容"
+            android:id="@+id/tv_shopcommoint"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>

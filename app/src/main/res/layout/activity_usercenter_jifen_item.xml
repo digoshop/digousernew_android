@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/tv_jifen_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_20"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:text="title"
+        android:textSize="@dimen/base_dimen_30"
+        android:textColor="#454545" />
+
+    <TextView
+        android:id="@+id/tv_jifen_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_jifen_content"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:layout_marginLeft="@dimen/base_dimen_20"
+        android:text="time"
+        android:textSize="@dimen/base_dimen_30"
+        android:textColor="#C4C4C4" />
+
+    <TextView
+        android:id="@+id/tv_jifen_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/base_dimen_50"
+        android:text="point"
+        android:textSize="@dimen/base_dimen_38"
+        android:textColor="#C4C4C4" />
+
+</RelativeLayout>

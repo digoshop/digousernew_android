@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_text"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/lLayout_zhineng"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智能排序"
+            android:id="@+id/tv_arrountshop_quyu"
+            android:textColor="@color/black_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/iv_arrountshop_quyu"
+            android:src="@drawable/arrount_iv_arrowdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayout_seekquyu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_arrountshop_category"
+            android:text="区域分布"
+            android:textColor="@color/black_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/iv_arrountshop_category"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/arrount_iv_arrowdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayout_seeksercategorey"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="家政服务"
+            android:id="@+id/tv_arrountshop_area"
+            android:textColor="@color/black_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_arrountshop_area"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/arrount_iv_arrowdown" />
+    </LinearLayout>
+
+</LinearLayout>

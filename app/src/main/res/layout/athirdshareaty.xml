@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+ 
+
+    <Button
+        android:id="@+id/btnsharesina"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnqq"
+        android:onClick="onclicksharesina"
+        android:text="新浪分享" />
+
+    <Button
+        android:id="@+id/btnshareqq"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnqq"
+        android:onClick="onclickshareqq"
+        android:text="qq分享" />
+
+    <Button
+        android:id="@+id/btnshareqqzone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="onclickshareqqzone"
+        android:text="qq空间分享" />
+
+    <Button
+        android:id="@+id/btnshareweixin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="onclickshareweixin"
+        android:text="微信分享" />
+
+    <Button
+        android:id="@+id/btnsharequan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnqq"
+        android:onClick="onclicksharequan"
+        android:text="微信朋友圈分享" />
+
+    <Button
+        android:id="@+id/btnsharesms"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnqq"
+        android:onClick="onclicksharesms"
+        android:text="短信分享" />
+
+</LinearLayout>

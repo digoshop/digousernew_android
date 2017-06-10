@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titile_bar"
+        layout="@layout/title_bar_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.digoshop.app.utils.RoundImageView
+                android:id="@+id/user_Headportrait"
+                android:layout_width="@dimen/base_dimen_160"
+                android:layout_height="@dimen/base_dimen_160"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="@drawable/grzx_touxiang"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginTop="@dimen/base_dimen_30"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/name_text"
+                    android:id="@+id/tv_modifinfo_name"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_10"
+                    android:layout_marginRight="@dimen/base_dimen_40"
+                    android:layout_toRightOf="@+id/tv_modifinfo_name">
+                    <com.digoshop.app.module.userCenter.view.ContainsEmojiEditText
+                        android:id="@+id/edit_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请输入姓名"
+                        android:maxLength="40"
+                        android:paddingLeft="@dimen/base_dimen_10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/base_dimen_28" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/tv_modifinfo_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/nicheng_text"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_10"
+                    android:layout_marginRight="@dimen/base_dimen_40"
+                    android:layout_toRightOf="@+id/tv_modifinfo_nick">
+
+                    <com.digoshop.app.module.userCenter.view.ContainsEmojiEditText
+                        android:id="@+id/edit_user_nicheng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请输入昵称"
+                        android:maxLength="40"
+                        android:paddingLeft="@dimen/base_dimen_10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/base_dimen_28" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/sex_text"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <ImageView
+                    android:id="@+id/iv_xingbiearrow"
+                    android:layout_width="@dimen/base_dimen_28"
+                    android:layout_height="@dimen/base_dimen_28"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/base_dimen_10"
+                    android:src="@drawable/grzx_jiantou2" />
+
+                <TextView
+                    android:id="@+id/tv_user_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/base_dimen_40"
+                    android:layout_toLeftOf="@+id/iv_xingbiearrow"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/base_dimen_28" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="@color/line_color" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/quyu_text"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:background="@drawable/bbxq_icon_dingwei"
+                    android:paddingLeft="@dimen/base_dimen_10"
+                    android:paddingRight="@dimen/base_dimen_10"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <TextView
+                    android:id="@+id/tv_edit_user_quyu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/base_dimen_80"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/quyu_text"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/base_dimen_28" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/tv_modifinfo_addresscontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="详细地址"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_10"
+                    android:layout_marginRight="@dimen/base_dimen_40"
+                    android:layout_toRightOf="@+id/tv_modifinfo_addresscontent">
+
+                    <com.digoshop.app.module.userCenter.view.ContainsEmojiEditText
+                        android:id="@+id/edit_user_detailaddres"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请输入详细地址"
+                        android:maxLength="40"
+                        android:paddingLeft="@dimen/base_dimen_10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/base_dimen_28" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/village_text"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <ImageView
+                    android:id="@+id/iv_xiaoquarrow"
+                    android:layout_width="@dimen/base_dimen_28"
+                    android:layout_height="@dimen/base_dimen_28"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/base_dimen_10"
+                    android:src="@drawable/grzx_jiantou2" />
+
+                <TextView
+                    android:id="@+id/tv_user_village"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:layout_toLeftOf="@id/iv_xiaoquarrow"
+                    android:singleLine="true"
+                    android:text="请选择小区"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/base_dimen_28" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="@color/line_color" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/birthday_text"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <ImageView
+                    android:id="@+id/iv_shengriarrow"
+                    android:layout_width="@dimen/base_dimen_28"
+                    android:layout_height="@dimen/base_dimen_28"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/base_dimen_10"
+                    android:src="@drawable/grzx_jiantou2" />
+
+                <TextView
+                    android:id="@+id/tv_user_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:layout_toLeftOf="@id/iv_shengriarrow"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:text="请选择生日"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/base_dimen_28" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/job_text"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <com.digoshop.app.module.userCenter.view.ContainsEmojiEditText
+                    android:id="@+id/edit_user_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/base_dimen_40"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入职业"
+                    android:maxLength="40"
+                    android:paddingLeft="@dimen/base_dimen_10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/base_dimen_28" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/marryday_text"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <ImageView
+                    android:id="@+id/iv_jinianriarrow"
+                    android:layout_width="@dimen/base_dimen_28"
+                    android:layout_height="@dimen/base_dimen_28"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/base_dimen_10"
+                    android:src="@drawable/grzx_jiantou2" />
+
+                <TextView
+                    android:id="@+id/tv_user_marry"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:layout_toLeftOf="@+id/iv_jinianriarrow"
+                    android:gravity="center_vertical"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:text="请选择结婚纪念日"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/base_dimen_28" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="@string/interest_text"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <com.digoshop.app.module.userCenter.view.ContainsEmojiEditText
+                    android:id="@+id/edit_user_interest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/base_dimen_40"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入兴趣"
+                    android:maxLength="40"
+                    android:paddingLeft="@dimen/base_dimen_10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/base_dimen_28" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="@color/line_color" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_three"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/base_dimen_90"
+    android:background="#f5f5f5"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/base_dimen_1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:paddingTop="@dimen/base_dimen_30"
+        android:paddingBottom="@dimen/base_dimen_30"
+        android:paddingLeft="@dimen/base_dimen_10"
+        >
+
+        <TextView
+            android:id="@+id/tv_threename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:text="类别"
+            android:textColor="#666666"
+            android:textSize="@dimen/base_dimen_24" />
+    </RelativeLayout>
+
+
+</LinearLayout>

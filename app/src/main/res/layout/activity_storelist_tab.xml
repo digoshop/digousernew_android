@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_text"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/lLayout_storelist_chengqu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_arrountshop_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部区域"
+            android:textSize="@dimen/base_dimen_30"
+            android:textColor="@color/black_text" />
+
+        <ImageView
+            android:id="@+id/iv_arrountshop_area"
+            android:layout_width="@dimen/base_dimen_20"
+            android:layout_height="@dimen/base_dimen_20"
+            android:layout_alignBottom="@+id/tv_arrountshop_area"
+            android:layout_marginLeft="@dimen/base_dimen_10"
+            android:layout_toRightOf="@+id/tv_arrountshop_area"
+            android:paddingBottom="@dimen/base_dimen_6"
+            android:src="@drawable/arrount_iv_arrowdown" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/lLayout_storelist_pinpai"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_arrountshop_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品牌筛选"
+            android:textSize="@dimen/base_dimen_30"
+            android:textColor="@color/black_text" />
+
+        <ImageView
+            android:id="@+id/iv_arrountshop_category"
+            android:layout_width="@dimen/base_dimen_20"
+            android:layout_height="@dimen/base_dimen_20"
+            android:layout_alignBottom="@+id/tv_arrountshop_category"
+            android:layout_marginLeft="@dimen/base_dimen_10"
+            android:layout_toRightOf="@+id/tv_arrountshop_category"
+            android:paddingBottom="@dimen/base_dimen_6"
+            android:src="@drawable/arrount_iv_arrowdown" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lLayout_storelist_zonghe"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_arrountshop_quyu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距离最近"
+            android:textSize="@dimen/base_dimen_30"
+            android:textColor="@color/black_text" />
+
+        <ImageView
+            android:id="@+id/iv_arrountshop_quyu"
+            android:layout_width="@dimen/base_dimen_20"
+            android:layout_height="@dimen/base_dimen_20"
+            android:layout_alignBottom="@+id/tv_arrountshop_quyu"
+            android:layout_marginLeft="@dimen/base_dimen_10"
+            android:layout_toRightOf="@+id/tv_arrountshop_quyu"
+            android:paddingBottom="@dimen/base_dimen_6"
+            android:src="@drawable/arrount_iv_arrowdown" />
+    </RelativeLayout>
+
+</LinearLayout>

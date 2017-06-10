@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <!-- 顶部轮询推荐 -->
+
+        <include
+            layout="@layout/home_ads"
+            android:id="@+id/view_homeads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- tab栏目 -->
+
+        <include
+            layout="@layout/home_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_350"
+            android:background="#f8f8f8" />
+
+        <!-- 促销头条 -->
+
+        <include
+            layout="@layout/home_discount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_106"
+            android:background="#f5f5f5" />
+
+
+
+        <!-- 闪拍购 -->
+
+        <include
+            layout="@layout/home_rushbuy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_375"
+            android:visibility="gone"
+            android:background="@color/white_text" />
+        <!-- 推荐兑换商品列表 -->
+
+        <include
+            layout="@layout/home_saleproduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!-- 找商铺 -->
+
+        <include
+            layout="@layout/home_findshops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 寻服务 -->
+
+        <include
+            layout="@layout/home_findservices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!-- 折扣超优惠 -->
+
+        <include
+            layout="@layout/home_brandshow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              />
+        <!-- 推荐店铺 -->
+
+        <include
+            layout="@layout/home_saleshop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/bar_head_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        />
+</RelativeLayout>

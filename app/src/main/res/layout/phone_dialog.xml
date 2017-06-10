@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/base_dimen_600"
+    android:layout_height="@dimen/base_dimen_260"
+    android:background="@drawable/login_bg_yizhuce" >
+
+    <TextView
+        android:id="@+id/tishitv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_30"
+        android:text="@string/tishi"
+        android:textColor="@color/title_bg"
+        android:textSize="@dimen/base_dimen_28" />
+
+    <TextView
+        android:id="@+id/reiponetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tishitv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_30"
+        android:text="@string/already_phone"
+        android:textColor="@color/text_C6"
+        android:textSize="@dimen/base_dimen_28" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:orientation="horizontal" 
+        android:layout_marginBottom="@dimen/base_dimen_24">
+
+        <Button
+            android:id="@+id/reipone_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base_dimen_100"
+            android:layout_below="@id/tishitv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/base_dimen_30"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="@string/change_phone"
+            android:textColor="@color/text_C6"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <Button
+            android:id="@+id/now_login"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base_dimen_100"
+            android:layout_below="@id/tishitv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="@string/now_logintext"
+            android:textColor="@color/title_bg"
+            android:textSize="@dimen/base_dimen_28" />
+    </LinearLayout>
+
+</RelativeLayout>
